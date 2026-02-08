@@ -136,15 +136,15 @@ func (s versionIndex) findVersionGreaterThan(version int) (index int, found bool
 // interface.
 type Silencer struct {
 	silences *Silences
-	marker   types.AlertMarker
+	cache    *cache
 	logger   *slog.Logger
 }
 
 // NewSilencer returns a new Silencer.
-func NewSilencer(s *Silences, m types.AlertMarker, l *slog.Logger) *Silencer {
+func NewSilencer(s *Silences, l *slog.Logger) *Silencer {
 	return &Silencer{
 		silences: s,
-		marker:   m,
+		cache:    &cache{entries: map[model.Fingerprint]*cacheEntry{}},
 		logger:   l,
 	}
 }
@@ -152,8 +152,6 @@ func NewSilencer(s *Silences, m types.AlertMarker, l *slog.Logger) *Silencer {
 // Mutes implements the Muter interface.
 func (s *Silencer) Mutes(ctx context.Context, lset model.LabelSet) bool {
 	fp := lset.Fingerprint()
-	activeIDs, pendingIDs, markerVersion, _ := s.marker.Silenced(fp)
-
 	ctx, span := tracer.Start(ctx, "silence.Silencer.Mutes",
 		trace.WithAttributes(
 			attribute.String("alerting.alert.fingerprint", fp.String()),
@@ -162,20 +160,27 @@ func (s *Silencer) Mutes(ctx context.Context, lset model.LabelSet) bool {
 	)
 	defer span.End()
 
+	// Update the global marker with active silences cached for this fingerprint.
+	// defer func() {
+	// 	s.marker.SetActiveOrSilenced(fp, s.cache.get(fp).activeIDs)
+	// }()
+
+	// Get the cached entry for this fingerprint.
+	cachedEntry := s.cache.get(fp)
+
 	var (
 		oldSils    []*pb.Silence
 		newSils    []*pb.Silence
-		newVersion = markerVersion
+		newVersion = cachedEntry.version
 	)
-	totalMarkerSilences := len(activeIDs) + len(pendingIDs)
-	markerIsUpToDate := markerVersion == s.silences.Version()
+	cacheIsUpToDate := cachedEntry.version == s.silences.Version()
 
-	if markerIsUpToDate && totalMarkerSilences == 0 {
+	if cacheIsUpToDate && cachedEntry.count() == 0 {
 		// Very fast path: no new silences have been added and this lset was not
 		// silenced last time we checked.
 		span.AddEvent("No new silences to match since last check",
 			trace.WithAttributes(
-				attribute.Int("alerting.silences.count", totalMarkerSilences),
+				attribute.Int("alerting.silences.cache.count", cachedEntry.count()),
 			),
 		)
 		return false
@@ -184,11 +189,11 @@ func (s *Silencer) Mutes(ctx context.Context, lset model.LabelSet) bool {
 	// silences last time we queried so we need to see if those are still active/have become
 	// active. It's possible for there to be both old and new silences.
 
-	if totalMarkerSilences > 0 {
+	if cachedEntry.count() > 0 {
 		// there were old silences for this lset, we need to find them to check if they
 		// are still active/pending, or have ended.
 		var err error
-		allIDs := append(append(make([]string, 0, totalMarkerSilences), activeIDs...), pendingIDs...)
+		allIDs := append(append(make([]string, 0, cachedEntry.count()), cachedEntry.activeIDs...), cachedEntry.pendingIDs...)
 		oldSils, _, err = s.silences.Query(
 			ctx,
 			QIDs(allIDs...),
@@ -204,7 +209,7 @@ func (s *Silencer) Mutes(ctx context.Context, lset model.LabelSet) bool {
 		}
 	}
 
-	if !markerIsUpToDate {
+	if !cacheIsUpToDate {
 		// New silences have been added since the last time the marker was updated. Do a full
 		// query for any silences newer than the markerVersion that match the lset.
 		// On this branch we WILL update newVersion since we can be sure we've seen any silences
@@ -212,7 +217,7 @@ func (s *Silencer) Mutes(ctx context.Context, lset model.LabelSet) bool {
 		var err error
 		newSils, newVersion, err = s.silences.Query(
 			ctx,
-			QSince(markerVersion),
+			QSince(cachedEntry.version),
 			QState(types.SilenceStateActive, types.SilenceStatePending),
 			QMatches(lset),
 		)
@@ -225,14 +230,14 @@ func (s *Silencer) Mutes(ctx context.Context, lset model.LabelSet) bool {
 			)
 		}
 	}
-	// Note: if markerIsUpToDate, newVersion is left at markerVersion because the Query call
+	// Note: if cacheIsUpToDate, newVersion is left at cachedEntry.version because the Query call
 	// might already return a newer version, which is not the version our old list of
 	// applicable silences is based on.
 
 	totalSilences := len(oldSils) + len(newSils)
 	if totalSilences == 0 {
 		// Easy case, neither active nor pending silences anymore.
-		s.marker.SetActiveOrSilenced(fp, newVersion, nil, nil)
+		s.cache.set(fp, newCacheEntry(nil, nil, newVersion))
 		span.AddEvent("No silences to match", trace.WithAttributes(
 			attribute.Int("alerting.silences.count", totalSilences),
 		))
@@ -243,8 +248,8 @@ func (s *Silencer) Mutes(ctx context.Context, lset model.LabelSet) bool {
 	// much less effort than just recreating the IDs from the query
 	// result. So let's do it in any case. Note that we cannot reuse the
 	// current ID slices for concurrency reasons.
-	activeIDs = make([]string, 0, totalSilences)
-	pendingIDs = make([]string, 0, totalSilences)
+	activeIDs := make([]string, 0, totalSilences)
+	pendingIDs := make([]string, 0, totalSilences)
 	now := s.silences.nowUTC()
 
 	// Categorize old and new silences by their current state
@@ -270,13 +275,25 @@ func (s *Silencer) Mutes(ctx context.Context, lset model.LabelSet) bool {
 	sort.Strings(activeIDs)
 	sort.Strings(pendingIDs)
 
-	s.marker.SetActiveOrSilenced(fp, newVersion, activeIDs, pendingIDs)
+	s.cache.set(fp, newCacheEntry(activeIDs, pendingIDs, newVersion))
 	mutes := len(activeIDs) > 0
 	span.AddEvent("Silencer mutes alert", trace.WithAttributes(
 		attribute.Int("alerting.silences.active.count", len(activeIDs)),
 		attribute.Int("alerting.silences.pending.count", len(pendingIDs)),
 	))
 	return mutes
+}
+
+func (s *Silencer) GetCachedActiveIDs(ctx context.Context, fp model.Fingerprint) []string {
+	ctx, span := tracer.Start(ctx, "silence.Silencer.GetCachedActiveIDs",
+		trace.WithAttributes(
+			attribute.String("alerting.alert.fingerprint", fp.String()),
+		),
+		trace.WithSpanKind(trace.SpanKindInternal),
+	)
+	defer span.End()
+
+	return s.cache.get(fp).activeIDs
 }
 
 // Silences holds a silence state that can be modified, queried, and snapshot.

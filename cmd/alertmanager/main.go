@@ -478,7 +478,7 @@ func run() int {
 		disp.Stop()
 
 		inhibitor = inhibit.NewInhibitor(alerts, conf.InhibitRules, marker, logger)
-		silencer := silence.NewSilencer(silences, marker, logger)
+		silencer := silence.NewSilencer(silences, logger)
 
 		// An interface value that holds a nil concrete value is non-nil.
 		// Therefore we explicly pass an empty interface, to detect if the
@@ -506,6 +506,8 @@ func run() int {
 		api.Update(conf, func(ctx context.Context, labels model.LabelSet) {
 			inhibitor.Mutes(ctx, labels)
 			silencer.Mutes(ctx, labels)
+			fp := labels.Fingerprint()
+			marker.SetActiveOrSilenced(fp, silencer.GetCachedActiveIDs(ctx, fp))
 		})
 
 		newDisp := dispatch.NewDispatcher(

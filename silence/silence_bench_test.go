@@ -112,8 +112,7 @@ func benchmarkMutes(b *testing.B, totalSilences, matchingSilences int) {
 		require.NoError(b, silences.Set(b.Context(), s))
 	}
 
-	m := types.NewMarker(prometheus.NewRegistry())
-	s := NewSilencer(silences, m, promslog.NewNopLogger())
+	s := NewSilencer(silences, promslog.NewNopLogger())
 
 	for b.Loop() {
 		s.Mutes(context.Background(), model.LabelSet{"foo": "bar"})
@@ -121,9 +120,7 @@ func benchmarkMutes(b *testing.B, totalSilences, matchingSilences int) {
 	b.StopTimer()
 
 	// The alert should be marked as silenced for each matching silence.
-	activeIDs, pendingIDs, _, silenced := m.Silenced(model.LabelSet{"foo": "bar"}.Fingerprint())
-	require.True(b, silenced || matchingSilences == 0)
-	require.Empty(b, pendingIDs)
+	activeIDs := s.GetCachedActiveIDs(context.Background(), model.LabelSet{"foo": "bar"}.Fingerprint())
 	require.Len(b, activeIDs, matchingSilences)
 }
 
@@ -187,10 +184,9 @@ func BenchmarkMutesIncremental(b *testing.B) {
 				require.NoError(b, silences.Set(b.Context(), s))
 			}
 
-			marker := types.NewMarker(prometheus.NewRegistry())
-			silencer := NewSilencer(silences, marker, promslog.NewNopLogger())
+			silencer := NewSilencer(silences, promslog.NewNopLogger())
 
-			// Warm up: Establish marker state (markerVersion = current version)
+			// Warm up: Establish cache state (cachedEntry.version = current version)
 			// This simulates a system that has been running for a while
 			lset := model.LabelSet{"service": "test", "instance": "instance1"}
 			silencer.Mutes(context.Background(), lset)
@@ -533,8 +529,7 @@ func benchmarkMutesParallel(b *testing.B, numSilences int) {
 		require.NoError(b, silences.Set(b.Context(), s))
 	}
 
-	m := types.NewMarker(prometheus.NewRegistry())
-	silencer := NewSilencer(silences, m, promslog.NewNopLogger())
+	silencer := NewSilencer(silences, promslog.NewNopLogger())
 
 	b.ResetTimer()
 

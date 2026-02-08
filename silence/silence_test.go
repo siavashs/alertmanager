@@ -1714,8 +1714,7 @@ func TestSilencer(t *testing.T) {
 	ss.clock = clock
 	now := ss.nowUTC()
 
-	m := types.NewMarker(prometheus.NewRegistry())
-	s := NewSilencer(ss, m, promslog.NewNopLogger())
+	s := NewSilencer(ss, promslog.NewNopLogger())
 
 	require.False(t, s.Mutes(t.Context(), model.LabelSet{"foo": "bar"}), "expected alert not silenced without any silences")
 
