@@ -16,6 +16,7 @@ package inhibit
 import (
 	"context"
 	"errors"
+	"path/filepath"
 	"strconv"
 	"testing"
 	"time"
@@ -25,6 +26,7 @@ import (
 	"github.com/prometheus/common/promslog"
 	"github.com/stretchr/testify/require"
 
+	"github.com/prometheus/alertmanager/config"
 	amcommoncfg "github.com/prometheus/alertmanager/config/common"
 	"github.com/prometheus/alertmanager/eventrecorder"
 	"github.com/prometheus/alertmanager/pkg/labels"
@@ -228,4 +230,96 @@ func mustNewMatcher(b *testing.B, op labels.MatchType, name, value string) *labe
 	m, err := labels.NewMatcher(op, name, value)
 	require.NoError(b, err)
 	return m
+}
+
+// BenchmarkMutesEventRecorderOverhead measures the per-call overhead that the
+// event recorder adds to Inhibitor.Mutes.  Three recorder configurations are
+// compared for each scenario:
+//
+//   - nop_recorder:                          NopRecorder (baseline, event proto is
+//     still constructed as a function argument).
+//   - active_recorder/recording_disabled:    Real recorder, but the context does
+//     not carry the recording flag so RecordEvent returns after the context check.
+//   - active_recorder/recording_enabled:     Full path including extractEventType,
+//     protojson.Marshal, and channel send.
+func BenchmarkMutesEventRecorderOverhead(b *testing.B) {
+	cases := []struct {
+		name    string
+		nRules  int
+		nAlerts int
+	}{
+		{"10_rules_1_alert", 10, 1},
+		{"100_rules_1000_alerts", 100, 1000},
+	}
+
+	for _, tc := range cases {
+		b.Run(tc.name, func(b *testing.B) {
+			b.Run("nop_recorder", func(b *testing.B) {
+				benchmarkMutesRecorderOverhead(b, tc.nRules, tc.nAlerts, eventrecorder.NopRecorder(), false)
+			})
+			b.Run("active_recorder/recording_disabled", func(b *testing.B) {
+				rec := newInhibitBenchRecorder(b)
+				defer rec.Close()
+				benchmarkMutesRecorderOverhead(b, tc.nRules, tc.nAlerts, rec, false)
+			})
+			b.Run("active_recorder/recording_enabled", func(b *testing.B) {
+				rec := newInhibitBenchRecorder(b)
+				defer rec.Close()
+				benchmarkMutesRecorderOverhead(b, tc.nRules, tc.nAlerts, rec, true)
+			})
+		})
+	}
+}
+
+// newInhibitBenchRecorder creates an active Recorder backed by a JSONL file in
+// a temporary directory.  The background write-loop drains the event queue so
+// the channel never fills up during the benchmark.
+func newInhibitBenchRecorder(b *testing.B) eventrecorder.Recorder {
+	b.Helper()
+	cfg := config.EventRecorderConfig{
+		Outputs: []config.EventRecorderOutput{{
+			Type: "file",
+			Path: filepath.Join(b.TempDir(), "events.jsonl"),
+		}},
+	}
+	return eventrecorder.NewRecorderFromConfig(cfg, "bench-inhibit", promslog.NewNopLogger(), prometheus.NewRegistry())
+}
+
+func benchmarkMutesRecorderOverhead(b *testing.B, numRules, numAlertsPerRule int, recorder eventrecorder.Recorder, recordingEnabled bool) {
+	b.Helper()
+	b.ReportAllocs()
+
+	r := prometheus.NewRegistry()
+	m := types.NewMarker(r)
+	// The mem alert store always uses NopRecorder — we only measure recorder
+	// overhead inside the Inhibitor.Mutes path.
+	s, err := mem.NewAlerts(context.TODO(), m, time.Minute, 0, nil, promslog.NewNopLogger(), eventrecorder.NopRecorder(), r, nil)
+	require.NoError(b, err)
+	defer s.Close()
+
+	opts := allRulesMatchBenchmark(b, numRules, numAlertsPerRule)
+	alerts, rules := benchmarkFromOptions(opts)
+	for _, a := range alerts {
+		tmp := a
+		require.NoError(b, s.Put(context.Background(), &tmp))
+	}
+
+	ih := NewInhibitor(s, rules, m, promslog.NewNopLogger(), recorder)
+	defer ih.Stop()
+	go ih.Run()
+
+	// Wait for the inhibitor to seed its cache.
+	<-time.After(time.Second)
+
+	ctx := context.Background()
+	if recordingEnabled {
+		ctx = eventrecorder.WithEventRecording(ctx)
+	}
+
+	b.ResetTimer()
+	for b.Loop() {
+		if ok := ih.Mutes(ctx, model.LabelSet{"dst": "0"}); !ok {
+			b.Fatal("expected dst=0 to be muted")
+		}
+	}
 }

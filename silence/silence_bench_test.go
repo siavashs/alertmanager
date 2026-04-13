@@ -17,6 +17,7 @@ import (
 	"context"
 	"fmt"
 	"math/rand"
+	"path/filepath"
 	"strconv"
 	"sync"
 	"testing"
@@ -29,6 +30,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
+	"github.com/prometheus/alertmanager/config"
 	"github.com/prometheus/alertmanager/eventrecorder"
 	"github.com/prometheus/alertmanager/silence/silencepb"
 	"github.com/prometheus/alertmanager/types"
@@ -653,4 +655,127 @@ func benchmarkGC(b *testing.B, numSilences int, expiredRatio float64) {
 		require.Len(b, s.mi, numActive)
 		b.StartTimer()
 	}
+}
+
+// BenchmarkMutesEventRecorderOverhead measures the per-call overhead that the
+// event recorder adds to Silencer.Mutes.  Three recorder configurations are
+// compared for each scenario:
+//
+//   - nop_recorder:                          NopRecorder (baseline, event protos
+//     are still constructed as function arguments).
+//   - active_recorder/recording_disabled:    Real recorder, but the context does
+//     not carry the recording flag so RecordEvent returns after the context check.
+//   - active_recorder/recording_enabled:     Full path including extractEventType,
+//     protojson.Marshal, and channel send.
+//
+// Because RecordEvent is called once per active matching silence inside Mutes,
+// the overhead scales linearly with matchingSilences.
+func BenchmarkMutesEventRecorderOverhead(b *testing.B) {
+	cases := []struct {
+		name             string
+		totalSilences    int
+		matchingSilences int
+	}{
+		{"1000_total_10_matching", 1000, 10},
+		{"1000_total_100_matching", 1000, 100},
+		{"10000_total_10_matching", 10000, 10},
+	}
+
+	for _, tc := range cases {
+		b.Run(tc.name, func(b *testing.B) {
+			b.Run("nop_recorder", func(b *testing.B) {
+				benchmarkMutesRecorderOverhead(b, tc.totalSilences, tc.matchingSilences, eventrecorder.NopRecorder(), false)
+			})
+			b.Run("active_recorder/recording_disabled", func(b *testing.B) {
+				rec := newSilenceBenchRecorder(b)
+				defer rec.Close()
+				benchmarkMutesRecorderOverhead(b, tc.totalSilences, tc.matchingSilences, rec, false)
+			})
+			b.Run("active_recorder/recording_enabled", func(b *testing.B) {
+				rec := newSilenceBenchRecorder(b)
+				defer rec.Close()
+				benchmarkMutesRecorderOverhead(b, tc.totalSilences, tc.matchingSilences, rec, true)
+			})
+		})
+	}
+}
+
+// newSilenceBenchRecorder creates an active Recorder backed by a JSONL file in
+// a temporary directory.  The background write-loop drains the event queue so
+// the channel never fills up during the benchmark.
+func newSilenceBenchRecorder(b *testing.B) eventrecorder.Recorder {
+	b.Helper()
+	cfg := config.EventRecorderConfig{
+		Outputs: []config.EventRecorderOutput{{
+			Type: "file",
+			Path: filepath.Join(b.TempDir(), "events.jsonl"),
+		}},
+	}
+	return eventrecorder.NewRecorderFromConfig(cfg, "bench-silence", promslog.NewNopLogger(), prometheus.NewRegistry())
+}
+
+func benchmarkMutesRecorderOverhead(b *testing.B, totalSilences, matchingSilences int, recorder eventrecorder.Recorder, recordingEnabled bool) {
+	b.Helper()
+	b.ReportAllocs()
+	require.LessOrEqual(b, matchingSilences, totalSilences)
+
+	silences, err := New(Options{Metrics: prometheus.NewRegistry()})
+	require.NoError(b, err)
+
+	clock := quartz.NewMock(b).WithLogger(quartz.NoOpLogger)
+	silences.clock = clock
+	now := clock.Now()
+
+	// Intersperse matching silences evenly among non-matching ones.
+	var interval int
+	if matchingSilences > 0 {
+		interval = totalSilences / matchingSilences
+	}
+
+	matchingCreated := 0
+	for i := range totalSilences {
+		var s *silencepb.Silence
+		if matchingCreated < matchingSilences && (i%interval == 0 || i == totalSilences-matchingSilences+matchingCreated) {
+			s = &silencepb.Silence{
+				Matchers: []*silencepb.Matcher{{
+					Type:    silencepb.Matcher_EQUAL,
+					Name:    "foo",
+					Pattern: "bar",
+				}},
+				StartsAt: timestamppb.New(now),
+				EndsAt:   timestamppb.New(now.Add(time.Minute)),
+			}
+			matchingCreated++
+		} else {
+			s = &silencepb.Silence{
+				Matchers: []*silencepb.Matcher{{
+					Type:    silencepb.Matcher_EQUAL,
+					Name:    "job",
+					Pattern: "job" + strconv.Itoa(i),
+				}},
+				StartsAt: timestamppb.New(now),
+				EndsAt:   timestamppb.New(now.Add(time.Minute)),
+			}
+		}
+		require.NoError(b, silences.Set(b.Context(), s))
+	}
+
+	m := types.NewMarker(prometheus.NewRegistry())
+	s := NewSilencer(silences, m, promslog.NewNopLogger(), recorder)
+
+	ctx := context.Background()
+	if recordingEnabled {
+		ctx = eventrecorder.WithEventRecording(ctx)
+	}
+
+	b.ResetTimer()
+	for b.Loop() {
+		s.Mutes(ctx, model.LabelSet{"foo": "bar"})
+	}
+	b.StopTimer()
+
+	// Verify correctness: the alert should be silenced for each matching silence.
+	activeIDs, silenced := m.Silenced(model.LabelSet{"foo": "bar"}.Fingerprint())
+	require.True(b, silenced || matchingSilences == 0)
+	require.Len(b, activeIDs, matchingSilences)
 }
