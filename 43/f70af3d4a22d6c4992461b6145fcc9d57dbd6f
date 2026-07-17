@@ -1,0 +1,67 @@
+eventrecorder/recorder.go
+  s_23e3c6c871dc68::t_0dbc7173dda91b 191-192
+  s_23e3c6c871dc68::t_e54878500cc39e 193,195-198
+  s_23e3c6c871dc68::t_466c4567089eb9 186,194
+config/config.go
+  s_23e3c6c871dc68::t_e54878500cc39e 240-243
+  s_23e3c6c871dc68::t_0dbc7173dda91b 239
+config/config_test.go
+  s_23e3c6c871dc68::t_c1d96feb155d3c 49-54,56-61,63-64,66-69
+  s_23e3c6c871dc68::t_0dbc7173dda91b 48,55,62,65
+docs/configuration.md
+  s_23e3c6c871dc68::t_3655c62e16180d 2224-2226,2243-2252
+  s_23e3c6c871dc68::t_e54878500cc39e 2152,2155,2220-2221,2223,2228-2241
+  s_23e3c6c871dc68::t_bec5a59ead515a 2242
+  s_23e3c6c871dc68::t_c1d96feb155d3c 173-174
+  s_23e3c6c871dc68::t_0dbc7173dda91b 2153-2154,2222
+  s_23e3c6c871dc68::t_6265ddd17eb1fa 2205-2219
+  s_23e3c6c871dc68::t_59d39bc8f470dd 2182-2185,2227
+eventrecorder/cloudflare_pipelines.go
+  s_23e3c6c871dc68::t_466c4567089eb9 49
+  s_23e3c6c871dc68::t_59d39bc8f470dd 60-63
+  s_23e3c6c871dc68::t_0f942c291c3684 84-85
+  s_23e3c6c871dc68::t_0dbc7173dda91b 1-48,50-59,64-83,86-90
+eventrecorder/webhook_test.go
+  s_23e3c6c871dc68::t_c1d96feb155d3c 17,91-92
+  s_23e3c6c871dc68::t_301772d465e5d2 344
+  s_23e3c6c871dc68::t_6265ddd17eb1fa 125,127,129-153,264-278,342-343
+  s_23e3c6c871dc68::t_466c4567089eb9 49-57,126,128
+  s_23e3c6c871dc68::t_59d39bc8f470dd 345-350
+eventrecorder/webhook.go
+  s_23e3c6c871dc68::t_59d39bc8f470dd 117,120-125,195-198
+  s_23e3c6c871dc68::t_662f2d31f4432b 158,251,253-263,334,336,338,355,396-402
+  s_23e3c6c871dc68::t_0f942c291c3684 54-61,83-88,118-119,172-194
+  s_23e3c6c871dc68::t_1762a309390d71 135-137
+  s_23e3c6c871dc68::t_466c4567089eb9 283-289
+  s_23e3c6c871dc68::t_f89d31d82b6867 151,164-169,201,240,335,337,339-347,349-354,356-395,403-416
+  s_23e3c6c871dc68::t_c6da4342edc303 348
+  s_23e3c6c871dc68::t_e54878500cc39e 150,199-200,209,234,238-239,245,309,424,435,441,449
+  s_23e3c6c871dc68::t_70305ee567897e 417
+eventrecorder/config.go
+  s_23e3c6c871dc68::t_2d0cf10a439624 60-62
+  s_23e3c6c871dc68::t_b85010039f9883 23-24,26-27
+  s_23e3c6c871dc68::t_0dbc7173dda91b 25,33,43,58-59
+CHANGELOG.md
+  s_23e3c6c871dc68::t_6265ddd17eb1fa 5
+eventrecorder/cloudflare_pipelines_test.go
+  s_23e3c6c871dc68::t_0dbc7173dda91b 1-33,41-73,75,77-101,103,105-135,137-166,168,170-196,198-255,258-277,283-285
+  s_23e3c6c871dc68::t_65755d4ad1a5e1 256-257
+  s_23e3c6c871dc68::t_59d39bc8f470dd 278-282
+  s_23e3c6c871dc68::t_466c4567089eb9 34-40,74,76,102,104,136,167,169,197
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "43f70af3d4a22d6c4992461b6145fcc9d57dbd6f",
+  "prompts": {},
+  "sessions": {
+    "s_23e3c6c871dc68": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_090571f67ffe9AqMRerhgddNj4",
+        "model": "gpt-5.6"
+      },
+      "human_author": null
+    }
+  }
+}
