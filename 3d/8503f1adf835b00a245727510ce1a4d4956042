@@ -1,0 +1,26 @@
+docs/configuration.md
+  s_99f939d3a55b64::t_1464ac4ec18424 2214-2216
+eventrecorder/kafka_test.go
+  s_99f939d3a55b64::t_83048832641e39 133,168,205,238,280,307,338,351,374,379,387-391,395,426,432,445-448,461,466,475,494,499-504,509,514,519,524
+  s_99f939d3a55b64::t_7ec240e11a07b6 400,408
+eventrecorder/kafka.go
+  s_99f939d3a55b64::t_1464ac4ec18424 39-40,74-76,111-113,153,174-176,205
+CHANGELOG.md
+  s_99f939d3a55b64::t_1464ac4ec18424 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "3d8503f1adf835b00a245727510ce1a4d4956042",
+  "prompts": {},
+  "sessions": {
+    "s_99f939d3a55b64": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_09036c7e8ffePmd8kyTrFDS7E3",
+        "model": "gpt-5.6"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
