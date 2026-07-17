@@ -1,0 +1,62 @@
+eventrecorder/webhook_test.go
+  s_23e3c6c871dc68::t_59d39bc8f470dd 338-343
+  s_23e3c6c871dc68::t_c1d96feb155d3c 17,82-83
+  s_23e3c6c871dc68::t_6265ddd17eb1fa 116-146,257-271,335-336
+  s_23e3c6c871dc68::t_301772d465e5d2 337
+eventrecorder/cloudflare_pipelines.go
+  s_23e3c6c871dc68::t_0f942c291c3684 84-85
+  s_23e3c6c871dc68::t_0dbc7173dda91b 1-59,64-83,86-90
+  s_23e3c6c871dc68::t_59d39bc8f470dd 60-63
+config/config.go
+  s_23e3c6c871dc68::t_e54878500cc39e 240-243
+  s_23e3c6c871dc68::t_0dbc7173dda91b 239
+docs/configuration.md
+  s_23e3c6c871dc68::t_0dbc7173dda91b 2153-2154,2222
+  s_23e3c6c871dc68::t_c1d96feb155d3c 173-174
+  s_23e3c6c871dc68::t_e54878500cc39e 2152,2155,2220-2221,2223,2228-2241
+  s_23e3c6c871dc68::t_59d39bc8f470dd 2182-2185,2227
+  s_23e3c6c871dc68::t_6265ddd17eb1fa 2205-2219
+  s_23e3c6c871dc68::t_3655c62e16180d 2224-2226,2243-2252
+  s_23e3c6c871dc68::t_bec5a59ead515a 2242
+CHANGELOG.md
+  s_23e3c6c871dc68::t_6265ddd17eb1fa 5
+eventrecorder/config.go
+  s_23e3c6c871dc68::t_b85010039f9883 23-24,26-27
+  s_23e3c6c871dc68::t_0dbc7173dda91b 25,33,43,58-59
+  s_23e3c6c871dc68::t_2d0cf10a439624 60-62
+eventrecorder/cloudflare_pipelines_test.go
+  s_23e3c6c871dc68::t_59d39bc8f470dd 285-289
+  s_23e3c6c871dc68::t_0dbc7173dda91b 1-284,290-292
+config/config_test.go
+  s_23e3c6c871dc68::t_c1d96feb155d3c 49-54,56-61,63-64,66-69
+  s_23e3c6c871dc68::t_0dbc7173dda91b 48,55,62,65
+eventrecorder/recorder.go
+  s_23e3c6c871dc68::t_c1d96feb155d3c 186
+  s_23e3c6c871dc68::t_e54878500cc39e 193,195-198
+  s_23e3c6c871dc68::t_0dbc7173dda91b 191-192,194
+eventrecorder/webhook.go
+  s_23e3c6c871dc68::t_e54878500cc39e 150,199-200,209,234,238-239,245,302,417,428,434,442
+  s_23e3c6c871dc68::t_f89d31d82b6867 151,164-169,201,240,328,330,332-340,342-347,349-388,396-409
+  s_23e3c6c871dc68::t_662f2d31f4432b 158,251,253-263,327,329,331,348,389-395
+  s_23e3c6c871dc68::t_c6da4342edc303 341
+  s_23e3c6c871dc68::t_59d39bc8f470dd 117,120-125,195-198
+  s_23e3c6c871dc68::t_1762a309390d71 135-137
+  s_23e3c6c871dc68::t_0f942c291c3684 54-61,83-88,118-119,172-194
+  s_23e3c6c871dc68::t_70305ee567897e 410
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "45d6b0e798e810bfbffe0114239cb909ab104d0e",
+  "prompts": {},
+  "sessions": {
+    "s_23e3c6c871dc68": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_090571f67ffe9AqMRerhgddNj4",
+        "model": "gpt-5.6"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
