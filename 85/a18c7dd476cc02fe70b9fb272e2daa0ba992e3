@@ -1,0 +1,20 @@
+nflog/nflog_test.go
+  s_b0b7c87eea75a0::t_f020ec3c064f00 161-167,182
+  s_b0b7c87eea75a0::t_4e401f81bc1bda 168
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "85a18c7dd476cc02fe70b9fb272e2daa0ba992e3",
+  "prompts": {},
+  "sessions": {
+    "s_b0b7c87eea75a0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_09021df24ffeTqSFYYdUlPT3BV",
+        "model": "gpt-5.6"
+      },
+      "human_author": null
+    }
+  }
+}
