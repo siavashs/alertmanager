@@ -1,0 +1,17 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "e8d5e0dfc0dbe0c7ee20a7cd9e90eba0d7d51c8d",
+  "prompts": {},
+  "sessions": {
+    "s_23e3c6c871dc68": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_090571f67ffe9AqMRerhgddNj4",
+        "model": "gpt-5.6"
+      },
+      "human_author": null
+    }
+  }
+}
