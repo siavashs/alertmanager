@@ -1,0 +1,20 @@
+eventrecorder/config.go
+  s_99f939d3a55b64::t_263f388a1a9917 26
+  s_99f939d3a55b64::t_d925ad51a06e16 27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "6d81d2ca3466441415f86ddeaa30df8d7b9d1b3f",
+  "prompts": {},
+  "sessions": {
+    "s_99f939d3a55b64": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_09036c7e8ffePmd8kyTrFDS7E3",
+        "model": "gpt-5.6"
+      },
+      "human_author": null
+    }
+  }
+}
