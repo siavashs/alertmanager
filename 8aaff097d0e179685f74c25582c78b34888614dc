@@ -1,0 +1,19 @@
+AGENTS.md
+  s_69ffdf4ed1b381::t_de4428e0243a5b 8-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "8aaff097d0e179685f74c25582c78b34888614dc",
+  "prompts": {},
+  "sessions": {
+    "s_69ffdf4ed1b381": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_034102442ffe0hKl6LUBV3Qr6v",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Andy Grunwald <agrunwald@cloudflare.com>"
+    }
+  }
+}
