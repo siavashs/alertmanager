@@ -1,0 +1,21 @@
+README.md
+  s_d6f4e513a52ebf::t_b553f2b3519184 42-43
+  s_d6f4e513a52ebf::t_a0435c82ea2bf9 28-30
+  s_d6f4e513a52ebf::t_69fe5367f8533b 65-67,71
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "80c5b75e102e500509af841e15f8144d1f2b8816",
+  "prompts": {},
+  "sessions": {
+    "s_d6f4e513a52ebf": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_024c91da5ffetE4fJ8lDZBKR27",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Andy Grunwald <agrunwald@cloudflare.com>"
+    }
+  }
+}
