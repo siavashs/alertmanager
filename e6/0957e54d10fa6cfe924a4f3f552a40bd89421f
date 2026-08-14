@@ -1,0 +1,32 @@
+docs/configuration.md
+  s_cb82fd8be94263::t_67c280c5495699 2191-2193
+  s_cb82fd8be94263::t_a2555f416cb41d 2234,2240
+eventrecorder/webhook_test.go
+  s_cb82fd8be94263::t_04ffec42ce4b7e 23,99-115
+  s_cb82fd8be94263::t_cdd36b8527a937 116-117
+  s_cb82fd8be94263::t_c8bc1f21c44123 411-423
+eventrecorder/webhook.go
+  s_cb82fd8be94263::t_40b2928ed0801b 84
+  s_cb82fd8be94263::t_6ee8a854343b55 108
+  s_cb82fd8be94263::t_91ebc55e4af1c8 42-43
+  s_cb82fd8be94263::t_335488f07e9d08 155
+  s_cb82fd8be94263::t_91f719f7770a1f 240-245,249
+  s_cb82fd8be94263::t_a4a282e4b53760 80-81,83,85-86
+  s_cb82fd8be94263::t_0c4f6f49dfda2e 24,26,451-463
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "e60957e54d10fa6cfe924a4f3f552a40bd89421f",
+  "prompts": {},
+  "sessions": {
+    "s_cb82fd8be94263": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "sturdy-wasabi",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
