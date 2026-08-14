@@ -1,0 +1,41 @@
+api/connect/health_test.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-59
+test/e2e/status_test.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-53
+api/connect/status.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-94
+AGENTS.md
+  s_9573c115f94a9b::t_8c190ab55f5681 22,144
+api/connect/connect.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-92
+go.mod
+  s_9573c115f94a9b::t_8c190ab55f5681 7-8,40-41,71,102,106-107
+test/e2e/harness_test.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-115
+CHANGELOG.md
+  s_9573c115f94a9b::t_8c190ab55f5681 3-4
+test/e2e/e2e_suite_test.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-29
+test/e2e/routing_test.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-36
+api/connect/status_test.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-156
+api/api.go
+  s_9573c115f94a9b::t_8c190ab55f5681 33,45-46,120,133,156,180,194-206,213-218
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "d8e208bbf255852d22e762330ff63d46b4b64c2e",
+  "prompts": {},
+  "sessions": {
+    "s_9573c115f94a9b": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "spotty-watchmaker",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
