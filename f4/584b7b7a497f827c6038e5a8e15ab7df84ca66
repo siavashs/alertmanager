@@ -15,6 +15,7 @@ AGENTS.md
   s_9573c115f94a9b::t_8c190ab55f5681 22,144
 CHANGELOG.md
   s_9573c115f94a9b::t_8c190ab55f5681 3-4
+  s_ca75ea5f1c7df3::t_071585ee00228f 5
 app/lifecycle_test.go
   s_9573c115f94a9b::t_e2f8207aa16855 105-106
 test/e2e/harness_test.go
@@ -50,6 +51,7 @@ test/e2e/e2e_suite_test.go
   s_9573c115f94a9b::t_8c190ab55f5681 1-29
 api/connect/health_test.go
   s_9573c115f94a9b::t_8c190ab55f5681 1,11-12,14,17,20-21,23,25-27,29-57
+  s_ca75ea5f1c7df3::t_878dbdfc9b4524 2-10,13,15-16,18-19,22,24,28,58-59
 proto/api/status/v3/status.proto
   s_9573c115f94a9b::t_9e6f75cdfc934d 25-27
 api/connect/status.go
@@ -86,6 +88,14 @@ test/e2e/status_test.go
         "tool": "devin",
         "id": "s_c37c02a7576f7e",
         "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    },
+    "s_ca75ea5f1c7df3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff101917affe64miG2yR7aze2m",
+        "model": "gpt-5.6-sol"
       },
       "human_author": "Siavash Safi <siavash@cloudflare.com>"
     }
