@@ -7,15 +7,20 @@ eventrecorder/events_test.go
 notify/event.go
   s_23e3c6c871dc68::t_be0a57b78dfeaf 106-108,111
   s_23e3c6c871dc68::t_b07d136bb8b7dd 112-113
+  s_ca75ea5f1c7df3::t_0265a036505f97 16,27-28,31,38-40,43-44,47,53-54,57,63,66,68,70,72,74,76,82-83,85,92,97-103
 proto/eventrecorder/events/v2/events.proto
   s_23e3c6c871dc68::t_be0a57b78dfeaf 15,40,43,47-48,60,63,70,75,81,87,97,103,116,120,127
+  s_ca75ea5f1c7df3::t_0265a036505f97 1-14,16-39,41-42,44-46,49-59,61-62,64-69,71-74,76-80,82-86,88-96,98-102,104-115,117-119,121-126,128-186
 eventrecorder/events.go
   s_23e3c6c871dc68::t_be0a57b78dfeaf 61-63,65-66,68,71-217,219-221,223-232,235-238,243-245,247-250,252-254,256-258,260,262-268,270,273-284,286,288-295,298-301,305-311,313,316-322,324,327-340,342,345-357,378
   s_23e3c6c871dc68::t_ce3970d061a171 58-60
+  s_ca75ea5f1c7df3::t_0265a036505f97 17,19,22-24,27-28,33-52,54-57,359-363,366-368,370,373-376,381-392,394
 eventrecorder/recorder.go
   s_23e3c6c871dc68::t_be0a57b78dfeaf 311,313
+  s_ca75ea5f1c7df3::t_0265a036505f97 71,73,103-104,119,278,280-281,284-285,296,301-303,315-316,319,322
 CHANGELOG.md
   s_e44e08b9e6d82d::t_360b3e5f15722f 3
+  s_ca75ea5f1c7df3::t_6f8e40ce872dd9 4
 app/app.go
   s_e44e08b9e6d82d::t_ee9dadb49b52e3 267-268,271-272
 buf.yaml
@@ -60,6 +65,14 @@ silence/silence.go
         "tool": "opencode",
         "id": "ses_090571f67ffe9AqMRerhgddNj4",
         "model": "gpt-5.6"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    },
+    "s_ca75ea5f1c7df3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff101917affe64miG2yR7aze2m",
+        "model": "gpt-5.6-sol"
       },
       "human_author": "Siavash Safi <siavash@cloudflare.com>"
     },
