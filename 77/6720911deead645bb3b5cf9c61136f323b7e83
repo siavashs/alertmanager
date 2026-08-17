@@ -10,6 +10,7 @@ eventrecorder/file.go
   s_99f939d3a55b64::t_8a966be97f71b2 32-33,56,64,75,78-79,81,85-89,95
 CHANGELOG.md
   s_99f939d3a55b64::t_84667d0ee9ebf9 3
+  s_ca75ea5f1c7df3::t_3f543d63d700ec 4
 eventrecorder/webhook.go
   s_99f939d3a55b64::t_8a966be97f71b2 38-39,103-105,185,286,419
   s_99f939d3a55b64::t_263f388a1a9917 76-82,183-184,248-251
@@ -66,6 +67,14 @@ eventrecorder/kafka.go
         "model": "gpt-5.6"
       },
       "human_author": null
+    },
+    "s_ca75ea5f1c7df3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff101917affe64miG2yR7aze2m",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
     }
   }
 }
