@@ -1,0 +1,93 @@
+api/connect/status_test.go
+  s_9573c115f94a9b::t_4c8ee6346ee2e2 177-182
+  s_9573c115f94a9b::t_d5f72342bdd6b3 20,53-68
+  s_9573c115f94a9b::t_8c190ab55f5681 1-19,21,23-52,70-118,152-176,183-197,201,204-208,211-215
+  s_9573c115f94a9b::t_c469bcf53d37e1 69
+  s_9573c115f94a9b::t_b90a268409c56a 198-200,202-203
+  s_9573c115f94a9b::t_13da538213d665 209
+  s_9573c115f94a9b::t_ac9bd2b6e71aa6 22,119-151
+  s_9573c115f94a9b::t_cc6c93aff6b826 210
+api/status/v3/status.pb.go
+  s_9573c115f94a9b::t_4d646839563388 523-525
+test/e2e/routing_test.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-36
+AGENTS.md
+  s_9573c115f94a9b::t_8c190ab55f5681 22,144
+CHANGELOG.md
+  s_9573c115f94a9b::t_8c190ab55f5681 3-4
+app/lifecycle_test.go
+  s_9573c115f94a9b::t_e2f8207aa16855 105-106
+test/e2e/harness_test.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-100,102,104-111,120
+  s_9573c115f94a9b::t_63a84a36407a7f 118-119
+  s_9573c115f94a9b::t_cfaca2bb7bdbd5 112-117
+  s_9573c115f94a9b::t_756974f326ea5d 101,103
+go.mod
+  s_9573c115f94a9b::t_8c190ab55f5681 7-8,40-41,71,102,106-107
+api/api.go
+  s_9573c115f94a9b::t_8c190ab55f5681 34,46-47,121,134,157,191,209-213,221-223,238-243
+  s_9573c115f94a9b::t_1c7dc76d86ee08 21,175-176,178-185,205-208,214-218,220,227-232
+  s_9573c115f94a9b::t_3fa9ec92351647 177
+  s_9573c115f94a9b::t_69cf4d699c646a 247-257
+  s_9573c115f94a9b::t_225f69181739fa 233-234
+  s_9573c115f94a9b::t_4df923640ff7c5 219
+go.sum
+  s_c37c02a7576f7e::t_92e14fca39c21c 58-61,68-69,181-186,256-257,261-262,342-343,409-410,444-445,463-464,490-493,581-588
+api/api_test.go
+  s_9573c115f94a9b::t_d8254dd21112db 1-78
+app/app.go
+  s_9573c115f94a9b::t_8288e52fae6d36 530-533
+  s_9573c115f94a9b::t_cf6d65aa6c791e 536-539
+api/connect/connect.go
+  s_9573c115f94a9b::t_912b712d1234b1 15-18
+  s_9573c115f94a9b::t_12330ebba014a5 24
+  s_9573c115f94a9b::t_f27c2d835444f3 62,64-66
+  s_9573c115f94a9b::t_8c190ab55f5681 1-14,19-23,25-42,44-61,68-93
+  s_9573c115f94a9b::t_4f209c46dea73a 43,63,67
+api/status/v3/statusv3connect/status.connect.go
+  s_9573c115f94a9b::t_d2f93d7ceed9c4 74,107
+test/e2e/e2e_suite_test.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-29
+api/connect/health_test.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1,11-12,14,17,20-21,23,25-27,29-57
+proto/api/status/v3/status.proto
+  s_9573c115f94a9b::t_9e6f75cdfc934d 25-27
+api/connect/status.go
+  s_9573c115f94a9b::t_8c190ab55f5681 1-33,36-77,81-93
+  s_9573c115f94a9b::t_ccc386f35033b2 78-80
+  s_9573c115f94a9b::t_b723ac5e78610b 35
+  s_9573c115f94a9b::t_6698bab54e5fde 34
+test/e2e/status_test.go
+  s_9573c115f94a9b::t_ef424497103b13 56
+  s_9573c115f94a9b::t_e62151ed53ab73 70
+  s_9573c115f94a9b::t_f1e669bbf38a1e 18,20,44-45,47
+  s_9573c115f94a9b::t_86d07d607d5cd5 57-58
+  s_9573c115f94a9b::t_61612335fc7c8f 28
+  s_9573c115f94a9b::t_20eec3c2d6a91f 19,26-27,31,60-69,71-97
+  s_9573c115f94a9b::t_5a0460caead079 42-43
+  s_9573c115f94a9b::t_8c190ab55f5681 1-17,21-25,29-30,32-41,46,48-55,59,98
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "f4584b7b7a497f827c6038e5a8e15ab7df84ca66",
+  "prompts": {},
+  "sessions": {
+    "s_9573c115f94a9b": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "spotty-watchmaker",
+        "model": "unknown"
+      },
+      "human_author": null
+    },
+    "s_c37c02a7576f7e": {
+      "agent_id": {
+        "tool": "devin",
+        "id": "s_c37c02a7576f7e",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
