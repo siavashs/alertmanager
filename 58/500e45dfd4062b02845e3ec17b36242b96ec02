@@ -1,0 +1,19 @@
+json/json.go
+  s_9bbb3d61a49861::t_26f55919d77d42 12,22,32,39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "58500e45dfd4062b02845e3ec17b36242b96ec02",
+  "prompts": {},
+  "sessions": {
+    "s_9bbb3d61a49861": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "boatneck-coriander",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
