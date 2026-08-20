@@ -1,0 +1,27 @@
+nfpm.yaml
+  s_9bbb3d61a49861::t_ee8713a19efe94 1-20
+.gitlab-ci.yml
+  s_9bbb3d61a49861::t_ee8713a19efe94 1-120
+cloudflare/Dockerfile
+  s_9bbb3d61a49861::t_ee8713a19efe94 1-14
+.docker-images
+  s_9bbb3d61a49861::t_ee8713a19efe94 1-6
+.gitignore
+  s_9bbb3d61a49861::t_ee8713a19efe94 8-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "c8a2dff55eef19d5ca60b9f5dae096828fbf3f8e",
+  "prompts": {},
+  "sessions": {
+    "s_9bbb3d61a49861": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "boatneck-coriander",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
