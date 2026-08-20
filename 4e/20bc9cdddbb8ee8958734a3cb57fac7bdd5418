@@ -1,0 +1,40 @@
+eventrecorder/file.go
+  s_9bbb3d61a49861::t_eec760ab6a2453 29-30,40-42,53,61,72,75-76,78-86,92-93,125,177-178
+docs/configuration.md
+  s_9bbb3d61a49861::t_eec760ab6a2453 2149-2154,2187-2189,2205-2207,2253-2254,2279-2281
+eventrecorder/kafka_test.go
+  s_9bbb3d61a49861::t_eec760ab6a2453 17,21,39-61,158,194,232,265,307,334,362-363,367,375,380,394-399,409,414,422-426,430,435,443,461,467,480-483,496,501,510,529,534-539,544,549,554,559
+eventrecorder/recorder_test.go
+  s_9bbb3d61a49861::t_eec760ab6a2453 17,25,135-186,224,233-234
+eventrecorder/webhook.go
+  s_9bbb3d61a49861::t_eec760ab6a2453 36-37,74-80,101-103,181-183,246-249,284,417
+eventrecorder/config.go
+  s_9bbb3d61a49861::t_eec760ab6a2453 16-21,35-97
+eventrecorder/file_test.go
+  s_9bbb3d61a49861::t_eec760ab6a2453 32,36,60,96,123,136,151,153,159-164,185-186,191-192
+eventrecorder/webhook_test.go
+  s_9bbb3d61a49861::t_eec760ab6a2453 17,74,79,111,137,167,204,237,272,314,341,356-377,390,417,419,426,436,446,451-456,466,474,494-507,510,517,534-536
+eventrecorder/kafka.go
+  s_9bbb3d61a49861::t_eec760ab6a2453 36-37,69-71,75,84,106-108,148,169-172,186-188,220,231-240,344,377
+config/config_test.go
+  s_9bbb3d61a49861::t_eec760ab6a2453 56-57
+eventrecorder/recorder.go
+  s_9bbb3d61a49861::t_eec760ab6a2453 110-112,171-174,177,179,187,195,220,238,249
+  s_9bbb3d61a49861::t_b77ce017f8470a 285
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "4e20bc9cdddbb8ee8958734a3cb57fac7bdd5418",
+  "prompts": {},
+  "sessions": {
+    "s_9bbb3d61a49861": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "boatneck-coriander",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
