@@ -1,0 +1,91 @@
+eventrecorder/recorder_test.go
+  s_99f939d3a55b64::t_84667d0ee9ebf9 135,155
+  s_99f939d3a55b64::t_d42160aaf8dd0a 17,136-154,156-157
+  s_99f939d3a55b64::t_2c2a97cc41d8d5 224,233-234
+  s_99f939d3a55b64::t_c2c1ee04ee775d 186
+  s_99f939d3a55b64::t_6a45d98895c980 180-182
+  s_99f939d3a55b64::t_e9c6ffae40897a 25,158-179,183-185
+eventrecorder/config.go
+  s_99f939d3a55b64::t_d925ad51a06e16 103
+  s_99f939d3a55b64::t_6a45d98895c980 42-43,45
+  s_99f939d3a55b64::t_263f388a1a9917 16-21,35-41,44,46-102
+eventrecorder/webhook.go
+  s_99f939d3a55b64::t_8a966be97f71b2 36-37,101-103,183,284,417
+  s_99f939d3a55b64::t_263f388a1a9917 74-80,181-182,246-249
+eventrecorder/recorder.go
+  s_99f939d3a55b64::t_263f388a1a9917 110-112,187,195,203
+  s_99f939d3a55b64::t_6a45d98895c980 171-174
+  s_99f939d3a55b64::t_8a966be97f71b2 177,200-202,204-206,225,243,254
+  s_99f939d3a55b64::t_84667d0ee9ebf9 179
+  s_9bbb3d61a49861::t_e700e324aeff8d 290
+eventrecorder/file_test.go
+  s_99f939d3a55b64::t_2c2a97cc41d8d5 32,36,60,96,123,136,151,153,159-164,185-186,191-192
+  s_99f939d3a55b64::t_cce470ff7536a3 193
+config/config_test.go
+  s_ca75ea5f1c7df3::t_4c14397cdc26e8 65
+  s_99f939d3a55b64::t_2c2a97cc41d8d5 56-57
+CHANGELOG.md
+  s_ca75ea5f1c7df3::t_3f543d63d700ec 5
+  s_99f939d3a55b64::t_84667d0ee9ebf9 3
+eventrecorder/kafka.go
+  s_99f939d3a55b64::t_e9c6ffae40897a 75,84
+  s_99f939d3a55b64::t_8a966be97f71b2 186-188,220,231-240,344,377
+  s_99f939d3a55b64::t_1464ac4ec18424 36-37,106-108,148,172
+  s_99f939d3a55b64::t_263f388a1a9917 69-71,169-171
+eventrecorder/webhook_test.go
+  s_ca75ea5f1c7df3::t_4c14397cdc26e8 500,502,507-509
+  s_99f939d3a55b64::t_e9c6ffae40897a 376,494-499,501,503-506,510-512
+  s_99f939d3a55b64::t_bb2310804140cd 17,356-375
+  s_99f939d3a55b64::t_2c2a97cc41d8d5 74,79,111,137,167,204,237,272,314,341,390,417,419,426,436,446,451-456,466,474,515,522,539-541
+  s_99f939d3a55b64::t_0a6c6b7e8abcc6 377
+eventrecorder/stdout.go
+  s_99f939d3a55b64::t_263f388a1a9917 32,34-35,53-55,57
+  s_99f939d3a55b64::t_8a966be97f71b2 17,22-31,33,36,39,47-52,56,58,61
+docs/configuration.md
+  s_99f939d3a55b64::t_84667d0ee9ebf9 2152-2156
+  s_99f939d3a55b64::t_1464ac4ec18424 2281-2283
+  s_99f939d3a55b64::t_7653d8e73bc3ad 2149-2151,2189-2191,2207-2209,2255-2256,2331-2334
+eventrecorder/kafka_test.go
+  s_99f939d3a55b64::t_7ec240e11a07b6 435,443
+  s_99f939d3a55b64::t_83048832641e39 158,194,232,265,307,334,367,380,409,414,422-426,430,461,467,480-483,496,501,510,529,534-539,544,549,554,559
+  s_99f939d3a55b64::t_012f177523818a 17,363,375,394-399
+  s_99f939d3a55b64::t_3a7eec8e8c1601 21,39-61,362
+eventrecorder/stdout_test.go
+  s_99f939d3a55b64::t_2c2a97cc41d8d5 50-52,56-57,72-73,91-92,116-118,141-142,144-145,150,156-157,167-168,173,177-179
+eventrecorder/file.go
+  s_99f939d3a55b64::t_8a966be97f71b2 29-30,53,61,72,75-76,78,82-86,92
+  s_99f939d3a55b64::t_84667d0ee9ebf9 125,177
+  s_99f939d3a55b64::t_263f388a1a9917 40-42,79-81,93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "871005923ca95f196bfe853ae97a3371bdf7fbff",
+  "prompts": {},
+  "sessions": {
+    "s_99f939d3a55b64": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_09036c7e8ffePmd8kyTrFDS7E3",
+        "model": "gpt-5.6"
+      },
+      "human_author": null
+    },
+    "s_9bbb3d61a49861": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "boatneck-coriander",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    },
+    "s_ca75ea5f1c7df3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff101917affe64miG2yR7aze2m",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
