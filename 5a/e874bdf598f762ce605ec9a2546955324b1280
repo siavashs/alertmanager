@@ -1,0 +1,24 @@
+json/json_benchmark_test.go
+  s_9bbb3d61a49861::t_b705241f70af84 240-296
+  s_9bbb3d61a49861::t_612685df23af07 51-53
+  s_9bbb3d61a49861::t_362cb6e5047b1e 20,126-127,148-179
+  s_9bbb3d61a49861::t_6351390fb673e6 1-19,21-31,38-50,54-112,114-125,180-239,297-314,316-330
+  s_9bbb3d61a49861::t_4149f47c991448 128-147
+  s_9bbb3d61a49861::t_5a95b4508500bf 32-37,113,315
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "5ae874bdf598f762ce605ec9a2546955324b1280",
+  "prompts": {},
+  "sessions": {
+    "s_9bbb3d61a49861": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "boatneck-coriander",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
