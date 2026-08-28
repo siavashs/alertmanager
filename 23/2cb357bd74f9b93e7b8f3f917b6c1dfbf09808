@@ -15,6 +15,7 @@ test/e2e/harness_test.go
   s_9573c115f94a9b::t_756974f326ea5d 101,103
 api/connect/health_test.go
   s_9573c115f94a9b::t_8c190ab55f5681 1,11-12,14,17,20-21,23,25-27,29-57
+  s_eff04dc66cbcdb::t_5e57b07c7b0bfe 2-10,13,15-16,18-19,22,24,28,58-59
 go.mod
   s_9573c115f94a9b::t_8c190ab55f5681 7-8,40-41,71,102,106-107
 api/status/v3/status.pb.go
@@ -95,6 +96,14 @@ app/lifecycle_test.go
         "tool": "opencode",
         "id": "ses_ff101917affe64miG2yR7aze2m",
         "model": "gpt-5.6-sol"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    },
+    "s_eff04dc66cbcdb": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "rich-derby",
+        "model": "unknown"
       },
       "human_author": "Siavash Safi <siavash@cloudflare.com>"
     }
