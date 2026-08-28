@@ -1,0 +1,49 @@
+api/connect/status.go
+  s_eff04dc66cbcdb::t_49af98d87439b1 24-25,29,32,38,40,48,51-53,60,62,71,78,84,87,89,91
+test/e2e/status_test.go
+  s_eff04dc66cbcdb::t_17afc327f4d989 30-31,48,55,81,119
+test/e2e/harness_test.go
+  s_eff04dc66cbcdb::t_77c896faafebaf 30,137-138
+proto/api/status/v3alpha/status.proto
+  s_eff04dc66cbcdb::t_91d0f1cc730725 16
+  s_eff04dc66cbcdb::t_b5f7351d90bfb1 20
+api/api_test.go
+  s_eff04dc66cbcdb::t_a396ac3bb15d8f 84
+api/connect/health_test.go
+  s_eff04dc66cbcdb::t_b3ba8b0f6c8fcd 26,44
+CHANGELOG.md
+  s_eff04dc66cbcdb::t_c349406317c21e 3
+api/api.go
+  s_eff04dc66cbcdb::t_ec03f5bf55e891 226
+api/connect/connect.go
+  s_eff04dc66cbcdb::t_f5469992c6b56d 147,155-161,164-165,175-176,179-180,182
+  s_eff04dc66cbcdb::t_2ef5fbbdfbb8a4 17
+  s_eff04dc66cbcdb::t_24d275034fe5da 33,171
+  s_eff04dc66cbcdb::t_e8aaad8af442f7 71-75
+  s_eff04dc66cbcdb::t_2c3bc499bfde14 58-59
+  s_eff04dc66cbcdb::t_94dceb002b3e80 76-77
+api/connect/status_test.go
+  s_eff04dc66cbcdb::t_6b56152e000e9e 208,217
+  s_eff04dc66cbcdb::t_dc12e36226cd2b 209-216,218,220-229
+  s_eff04dc66cbcdb::t_9d6f74453a2d63 28-29,75,86,105,110,131,150,153-156,191,194,199
+api/status/v3alpha/status.pb.go
+  s_eff04dc66cbcdb::t_4a304a214a487d 18,20,74,78,87,103,115,128,174,186,199,255,267,280,295,303,315,328,363,375,388,413,425,438,450,462,475,485,487,489-493,507,509-511,521-525,528-529,532-534,536-549,552-561,569-571,578,584-587,589-591
+api/status/v3alpha/statusv3alphaconnect/status.connect.go
+  s_eff04dc66cbcdb::t_dda00aef1c04de 16,18,24,38,50,53,56,59-62,68,70,82,85-86,90,93,102,110,123-124
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "3ce4a0fd320decf532623fe98f5c42edf25be470",
+  "prompts": {},
+  "sessions": {
+    "s_eff04dc66cbcdb": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "rich-derby",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
