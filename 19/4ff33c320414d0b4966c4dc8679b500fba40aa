@@ -1,0 +1,26 @@
+api/connect/connect.go
+  s_eff04dc66cbcdb::t_cc412b7b42d841 62-64
+  s_eff04dc66cbcdb::t_415d2a7abde5e7 48-51
+api/connect/status.go
+  s_eff04dc66cbcdb::t_eb544b89f446d4 32,60-88,90-91,97,102,104-109
+api/connect/status_test.go
+  s_eff04dc66cbcdb::t_c7ec02b89eea84 21,58
+  s_eff04dc66cbcdb::t_8db467bae2aa9f 66
+  s_eff04dc66cbcdb::t_fb1e12403f2b80 152-173
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "194ff33c320414d0b4966c4dc8679b500fba40aa",
+  "prompts": {},
+  "sessions": {
+    "s_eff04dc66cbcdb": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "rich-derby",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
