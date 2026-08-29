@@ -1,0 +1,47 @@
+ui/mantine-ui/Makefile
+  s_e6628b82f91b56::t_4d8ffb48367ed9 2
+  s_e6628b82f91b56::t_10304a785294c8 11
+  s_e6628b82f91b56::t_68067849d17d07 1,3-10,12-29
+.github/workflows/ui-ci.yml
+  s_e6628b82f91b56::t_b733c57e676f2d 8,10
+  s_e6628b82f91b56::t_88ca86ebfb53ce 35-36
+Makefile
+  s_e6628b82f91b56::t_fb4e172fe2dfdb 33,36,39,42,58-68
+  s_e6628b82f91b56::t_706e74f89cd80c 22
+  s_e6628b82f91b56::t_e560d0ec09289a 52
+  s_e6628b82f91b56::t_4f293bfa787160 92
+  s_e6628b82f91b56::t_d99a7cfba76ed2 49-51
+  s_e6628b82f91b56::t_99928fb9884d2e 53
+  s_e6628b82f91b56::t_9677e9c07e0cf3 69
+ui/mantine-ui/vite.config.mjs
+  s_e6628b82f91b56::t_205b443564962d 1-2,4,19-22,24-26,28-29,36
+  s_e6628b82f91b56::t_3d9d3dfbf2d00e 30-32,35
+  s_e6628b82f91b56::t_427b63418b6e29 33-34
+  s_e6628b82f91b56::t_504e8921db2478 6,15-18,27,37-47
+  s_e6628b82f91b56::t_eb02ecfddd4a7e 9-13
+  s_e6628b82f91b56::t_7ada1d8e1b3f9f 23
+.github/workflows/ci.yml
+  s_e6628b82f91b56::t_61829cc056677c 27-28
+ui/mantine-ui/package.json
+  s_e6628b82f91b56::t_63f590a93c9dfe 48
+  s_e6628b82f91b56::t_d6cfcbfdb0b41e 18
+  s_e6628b82f91b56::t_ceb1c7f65c8dae 45
+ui/mantine-ui/package-lock.json
+  s_e6628b82f91b56::t_bc447f836554ce 35,38,566-586,860-1303,2000-2009,2059-2065,2239-2256,2663-2669,2730-2739,2787-2799,3254-3323,3366-3431,3507-3513,3805-3815
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "d19ce4c5ed212daf538a578bed38d08459adbb22",
+  "prompts": {},
+  "sessions": {
+    "s_e6628b82f91b56": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "melodic-leader",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
