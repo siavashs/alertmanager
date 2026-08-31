@@ -1,0 +1,23 @@
+app/app.go
+  s_e6628b82f91b56::t_3e8b9aa586545c 503-506,517-520
+ui/web.go
+  s_e6628b82f91b56::t_3e8b9aa586545c 20,24,26,133-173,175-180,257-306
+ui/web_test.go
+  s_e6628b82f91b56::t_3e8b9aa586545c 17-18,22,24,33-62,116,123,127-236,246,249-251,280-312,354,356-362,374-390,392-417
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "7a21b4f72eeea62019a97e904e4582866d5f4167",
+  "prompts": {},
+  "sessions": {
+    "s_e6628b82f91b56": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "melodic-leader",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
