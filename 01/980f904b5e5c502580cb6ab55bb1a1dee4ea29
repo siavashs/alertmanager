@@ -17,6 +17,7 @@ eventrecorder/recorder.go
   s_99f939d3a55b64::t_6a45d98895c980 171-174
   s_99f939d3a55b64::t_8a966be97f71b2 177,200-202,204-206,225,243,254
   s_99f939d3a55b64::t_84667d0ee9ebf9 179
+  s_35663c461d53a7::t_b273ad04727752 289
 eventrecorder/file_test.go
   s_99f939d3a55b64::t_2c2a97cc41d8d5 32,36,60,96,123,136,151,153,159-164,185-186,191-192
   s_99f939d3a55b64::t_cce470ff7536a3 193
@@ -61,6 +62,14 @@ eventrecorder/file.go
   "base_commit_sha": "01980f904b5e5c502580cb6ab55bb1a1dee4ea29",
   "prompts": {},
   "sessions": {
+    "s_35663c461d53a7": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "denim-sassafras",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    },
     "s_99f939d3a55b64": {
       "agent_id": {
         "tool": "opencode",
