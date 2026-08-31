@@ -1,0 +1,27 @@
+ui/mantine-ui/src/App.tsx
+  s_e6628b82f91b56::t_485e47e81bd011 18,32
+ui/mantine-ui/src/runtimeConfig.test.ts
+  s_e6628b82f91b56::t_485e47e81bd011 1-48
+ui/mantine-ui/src/runtimeConfig.ts
+  s_e6628b82f91b56::t_485e47e81bd011 1-25
+ui/mantine-ui/vite.config.mjs
+  s_e6628b82f91b56::t_485e47e81bd011 14-43,49
+ui/mantine-ui/src/App.test.tsx
+  s_e6628b82f91b56::t_485e47e81bd011 1-28
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "cdb2448c8951c34dc8ea71687fe92bd88a6562da",
+  "prompts": {},
+  "sessions": {
+    "s_e6628b82f91b56": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "melodic-leader",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
