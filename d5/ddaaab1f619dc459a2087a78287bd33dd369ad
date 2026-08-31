@@ -1,0 +1,55 @@
+notify/context.go
+  s_2a7df3966f691d::t_7252b11c2bd75e 193-194,198,201-202
+  s_2a7df3966f691d::t_d591327cfc4a2d 21
+  s_2a7df3966f691d::t_01216a25d677aa 195-197
+proto/eventrecorder/events/v2/events.proto
+  s_2a7df3966f691d::t_07d5a3114c750f 99-102
+  s_2a7df3966f691d::t_ab25118039a538 71,77
+notify/mute.go
+  s_2a7df3966f691d::t_ae843d6f9133a2 105
+notify/mute_test.go
+  s_2a7df3966f691d::t_b45553d9e62170 112
+  s_2a7df3966f691d::t_99365bbe8a9a2b 94-111,113-116
+notify/notify_test.go
+  s_2a7df3966f691d::t_51084aa1e9c37c 22-23,25,34,37,39,51,53,59,224,243,254,277,346-348,352,360,397-398,402,425,427,439,482,492,519,527,549,551,559,584,595,599-603
+  s_2a7df3966f691d::t_aeb7b05bd78096 604
+  s_2a7df3966f691d::t_8dbe0bdc9352f0 605-607
+notify/event.go
+  s_2a7df3966f691d::t_583f4405390f07 69-70,72,76,80-83
+  s_2a7df3966f691d::t_a86f750e6f8049 38-43,46
+  s_2a7df3966f691d::t_0b163688af6bdd 77
+  s_2a7df3966f691d::t_88c5a122e9ef25 17
+  s_2a7df3966f691d::t_26ee69ac3a5fca 95
+  s_2a7df3966f691d::t_0da00a4c3f73c2 100
+  s_2a7df3966f691d::t_35e99c0a26de53 68
+  s_2a7df3966f691d::t_272f6025a48d01 94
+  s_2a7df3966f691d::t_f2c2eb2982a874 99
+eventrecorder/events.go
+  s_2a7df3966f691d::t_0aeb777b2f02c0 153,155,160,162
+  s_2a7df3966f691d::t_a9550e96d34061 374-377
+  s_2a7df3966f691d::t_877e69e87b807c 111-114
+  s_2a7df3966f691d::t_d917d8aecccdf8 170-171
+notify/retry_stage.go
+  s_2a7df3966f691d::t_49b42c70f75b24 182
+eventrecorder/events_test.go
+  s_2a7df3966f691d::t_ae44cd765e50d8 134
+  s_2a7df3966f691d::t_c89e9da7f5f2d4 35
+  s_2a7df3966f691d::t_192ab5d69d5d79 42
+  s_2a7df3966f691d::t_4c8fad5a54c9a1 151-152
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "d5ddaaab1f619dc459a2087a78287bd33dd369ad",
+  "prompts": {},
+  "sessions": {
+    "s_2a7df3966f691d": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "material-otter",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
