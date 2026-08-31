@@ -1,0 +1,47 @@
+.github/workflows/ui-ci.yml
+  s_e6628b82f91b56::t_88ca86ebfb53ce 35-36
+  s_e6628b82f91b56::t_b733c57e676f2d 8,10
+ui/mantine-ui/package.json
+  s_e6628b82f91b56::t_ceb1c7f65c8dae 45
+  s_e6628b82f91b56::t_d6cfcbfdb0b41e 18
+  s_e6628b82f91b56::t_63f590a93c9dfe 48
+ui/mantine-ui/package-lock.json
+  s_e6628b82f91b56::t_452f7363e05dc2 3782
+  s_e6628b82f91b56::t_8a3b8b9eee6465 3769
+  s_e6628b82f91b56::t_bc447f836554ce 35,38,554-571,827-1231,1928-1937,1987-1993,2167-2184,2579-2585,2646-2655,2703-2715,3170-3239,3282-3347,3423-3429,3721-3731,3773,3775-3777,3780-3781,3783-3784
+  s_e6628b82f91b56::t_060996c7da89ad 3770-3772
+  s_e6628b82f91b56::t_e8b8da6d247db1 3774
+  s_e6628b82f91b56::t_a86e0be85cefa6 3778-3779
+ui/mantine-ui/vite.config.mjs
+  s_e6628b82f91b56::t_205b443564962d 1-2,4,19-22,24-26,28-29,36
+  s_e6628b82f91b56::t_504e8921db2478 6,15-18,27,37-47
+  s_e6628b82f91b56::t_eb02ecfddd4a7e 9-13
+  s_e6628b82f91b56::t_3d9d3dfbf2d00e 30-32,35
+  s_e6628b82f91b56::t_7ada1d8e1b3f9f 23
+  s_e6628b82f91b56::t_427b63418b6e29 33-34
+ui/mantine-ui/Makefile
+  s_e6628b82f91b56::t_68067849d17d07 1-5,7-10,12-14,16-20
+  s_e6628b82f91b56::t_3d6193dd2ad05a 6,11,15
+Makefile
+  s_e6628b82f91b56::t_9677e9c07e0cf3 64
+  s_e6628b82f91b56::t_4f293bfa787160 87
+  s_e6628b82f91b56::t_fb4e172fe2dfdb 42,53-63
+  s_e6628b82f91b56::t_706e74f89cd80c 22
+  s_e6628b82f91b56::t_198240e89b6d8c 33,36,39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "5c5a0f705b14d80dc3d9e2e5b95fcb0ab0af8ef9",
+  "prompts": {},
+  "sessions": {
+    "s_e6628b82f91b56": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "melodic-leader",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
