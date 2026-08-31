@@ -1,0 +1,64 @@
+eventrecorder/events_test.go
+  s_2a7df3966f691d::t_ae44cd765e50d8 134
+  s_2a7df3966f691d::t_4c8fad5a54c9a1 151-152
+  s_2a7df3966f691d::t_192ab5d69d5d79 42
+  s_2a7df3966f691d::t_c89e9da7f5f2d4 35
+notify/context.go
+  s_2a7df3966f691d::t_7252b11c2bd75e 193-194,198,201-202
+  s_2a7df3966f691d::t_01216a25d677aa 195-197
+  s_2a7df3966f691d::t_d591327cfc4a2d 21
+notify/notify_test.go
+  s_2a7df3966f691d::t_942e4a1e4cfce3 633
+  s_2a7df3966f691d::t_1b04c97aa76672 611-612
+  s_2a7df3966f691d::t_c7e4b91ff78bab 617-630,637
+  s_2a7df3966f691d::t_9cde1f78a17caa 599
+  s_2a7df3966f691d::t_df2a0bb0bb0097 608-609
+  s_2a7df3966f691d::t_51084aa1e9c37c 22-23,25,34,37,39,51,53,59,224,243,254,277,346-348,352,360,397-398,402,425,427,439,482,492,519,527,549,551,559,584,595,600-603,653,655,703
+  s_2a7df3966f691d::t_e94e80a234624b 614-616
+  s_2a7df3966f691d::t_aeb7b05bd78096 604
+  s_2a7df3966f691d::t_8dbe0bdc9352f0 605-607,610,613,663,797,889,931,958,1008
+  s_2a7df3966f691d::t_69965977306fd9 631-632
+  s_2a7df3966f691d::t_a2555f4bc407e5 634-636
+  s_2a7df3966f691d::t_17cf365e21d786 638-640
+proto/eventrecorder/events/v2/events.proto
+  s_2a7df3966f691d::t_07d5a3114c750f 99-102
+  s_2a7df3966f691d::t_ab25118039a538 71,77
+notify/mute_test.go
+  s_2a7df3966f691d::t_99365bbe8a9a2b 94-111,113-116
+  s_2a7df3966f691d::t_b45553d9e62170 112
+notify/retry_stage.go
+  s_2a7df3966f691d::t_02d1f06b474a56 182
+notify/mute.go
+  s_2a7df3966f691d::t_ae843d6f9133a2 105
+notify/event.go
+  s_2a7df3966f691d::t_f2c2eb2982a874 102
+  s_2a7df3966f691d::t_26ee69ac3a5fca 98
+  s_2a7df3966f691d::t_88c5a122e9ef25 17
+  s_2a7df3966f691d::t_906d78a3577b60 38-41,46-50
+  s_2a7df3966f691d::t_3ab5caa2943a40 73,77-79,84-85
+  s_2a7df3966f691d::t_272f6025a48d01 97
+  s_2a7df3966f691d::t_583f4405390f07 83,86
+  s_2a7df3966f691d::t_0da00a4c3f73c2 103
+  s_2a7df3966f691d::t_0b163688af6bdd 80
+eventrecorder/events.go
+  s_2a7df3966f691d::t_a9550e96d34061 374-377
+  s_2a7df3966f691d::t_877e69e87b807c 111-114
+  s_2a7df3966f691d::t_0aeb777b2f02c0 153,155,160,162
+  s_2a7df3966f691d::t_d917d8aecccdf8 170-171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "2e50c63607aa847dad1f7273d346d8c5425c595f",
+  "prompts": {},
+  "sessions": {
+    "s_2a7df3966f691d": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "material-otter",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
