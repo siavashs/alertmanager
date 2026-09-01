@@ -1,0 +1,49 @@
+api/connect/connect.go
+  s_409b2e306026d4::t_bae726d730e554 45
+  s_409b2e306026d4::t_1e98684deea751 160-163,291,304,312,464,472,482,488,496,500,507,537,545,563
+  s_409b2e306026d4::t_bdbeb4dc9b20a9 44
+  s_409b2e306026d4::t_c4b4a600297134 41-43
+  s_409b2e306026d4::t_43e393d9a51912 158-159
+  s_409b2e306026d4::t_76b159dbee3639 288-290
+  s_409b2e306026d4::t_a711da7dbf4750 292-294,301-303
+  s_409b2e306026d4::t_be99f22378433c 305-307,309-311
+  s_409b2e306026d4::t_6eb8298248b9c0 313-314
+  s_409b2e306026d4::t_9c03c3e334902f 461-463
+  s_409b2e306026d4::t_b02c9f766548cf 465-467,469-471
+  s_409b2e306026d4::t_32a0708bce45c9 473-475,479-481
+  s_409b2e306026d4::t_9c5becbb8479f6 483-487
+  s_409b2e306026d4::t_0ab321432ae186 489-491,493-495
+  s_409b2e306026d4::t_3036d9c3287fa2 497-499
+  s_409b2e306026d4::t_9fb1646bb1b755 501-506
+  s_409b2e306026d4::t_ba0af927c63171 508-509
+  s_409b2e306026d4::t_dc777566635885 536
+  s_409b2e306026d4::t_ec2316a91be8a4 538-540,542-544
+  s_409b2e306026d4::t_f0cd7086231a5f 546-548,560-562
+  s_409b2e306026d4::t_ee549051f055b9 564-566
+api/connect/status_test.go
+  s_409b2e306026d4::t_80dc4e1688b4f9 75-86,166-187,496-563
+app/app.go
+  s_409b2e306026d4::t_0d62d70bcf7c88 395-396,537
+test/e2e/status_test.go
+  s_409b2e306026d4::t_8302b21008cb95 124-149
+app/lifecycle.go
+  s_409b2e306026d4::t_efb09a5cfffe0d 213-215
+cmd/alertmanager/main.go
+  s_409b2e306026d4::t_d73545b9578360 71-72,194-195
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "066fff4cfd006f1f873a0c76e9a2ce1942f12b4a",
+  "prompts": {},
+  "sessions": {
+    "s_409b2e306026d4": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "nonstop-wallflower",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
