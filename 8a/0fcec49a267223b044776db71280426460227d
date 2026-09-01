@@ -36,6 +36,7 @@ ui/mantine-ui/vite.config.mjs
   s_e6628b82f91b56::t_a156c4b5704dc8 46-49
   s_e6628b82f91b56::t_1514ea4f11729c 53
   s_e6628b82f91b56::t_7d899ff9adfdcb 14-43
+  s_e6628b82f91b56::t_d195ec360be84c 63
 ui/mantine-ui/Makefile
   s_e6628b82f91b56::t_4d6cb9c2b1256b 20
 ui/mantine-ui/src/runtimeConfig.test.ts
