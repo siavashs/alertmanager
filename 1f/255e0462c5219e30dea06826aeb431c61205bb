@@ -1,0 +1,58 @@
+api/connect/connect.go
+  s_409b2e306026d4::t_1e98684deea751 280,293,301,453,461,471,477,485,489,496,526,534,552
+  s_409b2e306026d4::t_76b159dbee3639 277-279
+  s_409b2e306026d4::t_a711da7dbf4750 281-283,290-292
+  s_409b2e306026d4::t_be99f22378433c 294-296,298-300
+  s_409b2e306026d4::t_6eb8298248b9c0 302-303
+  s_409b2e306026d4::t_9c03c3e334902f 450-452
+  s_409b2e306026d4::t_b02c9f766548cf 454-456,458-460
+  s_409b2e306026d4::t_32a0708bce45c9 462-464,468-470
+  s_409b2e306026d4::t_9c5becbb8479f6 472-476
+  s_409b2e306026d4::t_0ab321432ae186 478-480,482-484
+  s_409b2e306026d4::t_3036d9c3287fa2 486-488
+  s_409b2e306026d4::t_9fb1646bb1b755 490-495
+  s_409b2e306026d4::t_ba0af927c63171 497-498
+  s_409b2e306026d4::t_dc777566635885 525
+  s_409b2e306026d4::t_ec2316a91be8a4 527-529,531-533
+  s_409b2e306026d4::t_f0cd7086231a5f 535-537,549-551
+  s_409b2e306026d4::t_ee549051f055b9 553-555
+api/connect/status_test.go
+  s_409b2e306026d4::t_80dc4e1688b4f9 75-86,166-187,502-569
+app/app.go
+  s_409b2e306026d4::t_0d62d70bcf7c88 396-397
+  s_409b2e306026d4::t_1bc77c97f92007 110,527-544,546
+test/e2e/status_test.go
+  s_409b2e306026d4::t_8302b21008cb95 149,160,162-184
+  s_409b2e306026d4::t_c5525d6272e480 18,26,29,38-39,43,59-74,79,85,103-104,108-112,116-127,144-147,150-159,161
+app/lifecycle.go
+  s_409b2e306026d4::t_efb09a5cfffe0d 233
+  s_409b2e306026d4::t_eaf8948ecb3ddd 20,65,67-82,223-232,234-240
+cmd/alertmanager/main.go
+  s_409b2e306026d4::t_d73545b9578360 194-195
+app/listen.go
+  s_409b2e306026d4::t_58c09b48a77d3f 20,22,25,30,101-141
+test/e2e/harness_test.go
+  s_409b2e306026d4::t_563bc5be9e0e75 18-20,52-53,58,60-63,82-97,122-140,144,147-148
+README.md
+  s_409b2e306026d4::t_d56faebb49cf9e 194-199
+docs/https.md
+  s_409b2e306026d4::t_3f90d65c640ee0 83-84
+test/e2e/routing_test.go
+  s_409b2e306026d4::t_161615bae7ad65 25-26,32-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "1f255e0462c5219e30dea06826aeb431c61205bb",
+  "prompts": {},
+  "sessions": {
+    "s_409b2e306026d4": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "nonstop-wallflower",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
