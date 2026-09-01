@@ -1,0 +1,66 @@
+ui/web.go
+  s_e6628b82f91b56::t_d38a6d650ce8e6 64
+  s_e6628b82f91b56::t_eda68c0ec33bf1 172
+  s_e6628b82f91b56::t_de960bbf44dde5 35-52
+  s_e6628b82f91b56::t_83b045e8af1015 239-247,249,253,257-263
+  s_e6628b82f91b56::t_456d073375774e 171
+  s_e6628b82f91b56::t_32943429adf756 264-279
+  s_e6628b82f91b56::t_73ec431c907949 229-238
+  s_e6628b82f91b56::t_9de07c42f9c544 20,137-168
+  s_e6628b82f91b56::t_3414358f55aedb 169
+ui/web_test.go
+  s_e6628b82f91b56::t_beec01ca7ced4b 170,182,184,208-209,211,213
+  s_e6628b82f91b56::t_e98fd10b0582fe 214
+  s_e6628b82f91b56::t_34636f9276aa97 258-264
+  s_e6628b82f91b56::t_418ddac936ee7d 205-206,210
+  s_e6628b82f91b56::t_8ca4438daa69d8 276-281,283-284
+  s_e6628b82f91b56::t_44f2376b760ce7 93-94,96-100,102-104,136-145,147-153,155,165-166
+  s_e6628b82f91b56::t_7224d5c50e237a 105-135
+  s_e6628b82f91b56::t_d6893881105673 82,95,156,256,271
+  s_e6628b82f91b56::t_f3a605b3d9bc57 207
+  s_e6628b82f91b56::t_97db37e8e8372c 146
+  s_e6628b82f91b56::t_0de2acf684ab32 185-189
+  s_e6628b82f91b56::t_e1227336b6651c 101
+  s_e6628b82f91b56::t_ef580177f67e69 154,157-164
+  s_e6628b82f91b56::t_19d8e0a92d188c 212
+  s_e6628b82f91b56::t_40752040cb34cf 167
+  s_e6628b82f91b56::t_04a0aaf2e44df1 89
+ui/app/vite.config.mjs
+  s_e6628b82f91b56::t_c2a707c0eba86a 7-9
+Makefile
+  s_e6628b82f91b56::t_67b75ddb6d2506 45
+ui/mantine-ui/src/App.test.tsx
+  s_e6628b82f91b56::t_a2fe2cfa028172 1-2,9-10,16-18,23-28
+  s_e6628b82f91b56::t_e5cc403371b481 3-8,11-15,19-22
+ui/mantine-ui/vite.config.mjs
+  s_e6628b82f91b56::t_a156c4b5704dc8 46-49
+  s_e6628b82f91b56::t_1514ea4f11729c 53
+  s_e6628b82f91b56::t_7d899ff9adfdcb 14-43
+ui/mantine-ui/Makefile
+  s_e6628b82f91b56::t_4d6cb9c2b1256b 20
+ui/mantine-ui/src/runtimeConfig.test.ts
+  s_e6628b82f91b56::t_e5cc403371b481 1-48
+app/app.go
+  s_e6628b82f91b56::t_c38514ebd3d88c 517
+  s_e6628b82f91b56::t_1bfcf0c3d5885c 503-506
+ui/mantine-ui/src/App.tsx
+  s_e6628b82f91b56::t_e5cc403371b481 10,18,32,66
+ui/mantine-ui/src/runtimeConfig.ts
+  s_e6628b82f91b56::t_e5cc403371b481 1-25
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "8a0fcec49a267223b044776db71280426460227d",
+  "prompts": {},
+  "sessions": {
+    "s_e6628b82f91b56": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "melodic-leader",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
