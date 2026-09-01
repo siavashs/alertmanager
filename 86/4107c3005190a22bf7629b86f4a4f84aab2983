@@ -1,0 +1,35 @@
+api/api.go
+  s_409b2e306026d4::t_396554e6fb6273 189
+  s_409b2e306026d4::t_57fe61f61bd641 321-323,327-329
+  s_409b2e306026d4::t_07af398e4a64e6 192
+  s_409b2e306026d4::t_0b9be63d75b2e1 234
+api/api_test.go
+  s_409b2e306026d4::t_789086d1b3eb43 109,114,116-118
+  s_409b2e306026d4::t_252b8858136a8f 84
+  s_409b2e306026d4::t_82f533e5aa7b06 145
+  s_409b2e306026d4::t_d63750e6e69c99 101
+api/connect/connect.go
+  s_409b2e306026d4::t_4b60957aa0c0b8 104-164
+  s_409b2e306026d4::t_d50c76e166e06a 77,81,88-94
+  s_409b2e306026d4::t_8257024d35141b 66-67
+  s_409b2e306026d4::t_26efc0a207001d 237-246,248,256-262
+  s_409b2e306026d4::t_a753d166ac6a4c 46-59
+api/connect/status_test.go
+  s_409b2e306026d4::t_d91c01b7b793f6 234-240
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "864107c3005190a22bf7629b86f4a4f84aab2983",
+  "prompts": {},
+  "sessions": {
+    "s_409b2e306026d4": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "nonstop-wallflower",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
