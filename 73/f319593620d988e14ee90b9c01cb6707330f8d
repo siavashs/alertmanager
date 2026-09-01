@@ -1,0 +1,25 @@
+ui/web.go
+  s_e6628b82f91b56::t_d38a6d650ce8e6 38,41,44,46-47,50
+ui/mantine-ui/vite.config.mjs
+  s_e6628b82f91b56::t_82420276638b10 28
+ui/web_test.go
+  s_e6628b82f91b56::t_ba7529d960ca1b 20,127-135
+  s_e6628b82f91b56::t_beec01ca7ced4b 94,97,109,111,136-145
+  s_e6628b82f91b56::t_e98fd10b0582fe 146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "73f319593620d988e14ee90b9c01cb6707330f8d",
+  "prompts": {},
+  "sessions": {
+    "s_e6628b82f91b56": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "melodic-leader",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
