@@ -1,0 +1,27 @@
+app/app.go
+  s_409b2e306026d4::t_0d62d70bcf7c88 395-396,537
+api/connect/status_test.go
+  s_409b2e306026d4::t_80dc4e1688b4f9 75-86,166-187,489-556
+cmd/alertmanager/main.go
+  s_409b2e306026d4::t_d73545b9578360 71-72,194-195
+app/lifecycle.go
+  s_409b2e306026d4::t_efb09a5cfffe0d 213-215
+test/e2e/status_test.go
+  s_409b2e306026d4::t_8302b21008cb95 124-149
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "c38131d5b3565a0205d9e45a7d4ef648972a7cea",
+  "prompts": {},
+  "sessions": {
+    "s_409b2e306026d4": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "nonstop-wallflower",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
