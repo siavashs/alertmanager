@@ -1,0 +1,33 @@
+test/e2e/harness_test.go
+  s_409b2e306026d4::t_563bc5be9e0e75 18-20,52-53,58,60-63,82-97,122-140,144,147-148
+app/app.go
+  s_409b2e306026d4::t_1bc77c97f92007 110,527-544,546
+README.md
+  s_409b2e306026d4::t_d56faebb49cf9e 194-199
+docs/https.md
+  s_409b2e306026d4::t_3f90d65c640ee0 83-84
+app/listen.go
+  s_409b2e306026d4::t_58c09b48a77d3f 20,22,25,30,101-141
+test/e2e/status_test.go
+  s_409b2e306026d4::t_c5525d6272e480 18,26,29,38-39,43,59-74,79,85,103-104,108-112,116-127,144-147,150-159,161
+app/lifecycle.go
+  s_409b2e306026d4::t_eaf8948ecb3ddd 20,65,67-82,223-232,234-240
+test/e2e/routing_test.go
+  s_409b2e306026d4::t_161615bae7ad65 25-26,32-39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "08a2e46568a2556983c2163d46092045c1fb5d28",
+  "prompts": {},
+  "sessions": {
+    "s_409b2e306026d4": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "nonstop-wallflower",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
