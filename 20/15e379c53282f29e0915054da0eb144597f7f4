@@ -1,0 +1,38 @@
+ui/mantine-ui/src/components/Header.module.css
+  s_8ebd352e869635::t_773b7b032f441f 31-37
+ui/mantine-ui/src/components/Header.tsx
+  s_8ebd352e869635::t_50e82dc6af4a2e 1
+  s_8ebd352e869635::t_061b047be78913 106-112
+  s_8ebd352e869635::t_0a6c587e93ba8b 114
+  s_8ebd352e869635::t_c6c913e5a49446 127,130
+  s_8ebd352e869635::t_7f66cbea8e0fb2 13-14
+  s_8ebd352e869635::t_0c62f635091820 145,151-152
+  s_8ebd352e869635::t_33693f43f2250e 118-123
+  s_8ebd352e869635::t_ce00462b94d240 105,113,115-117,124-126,128-129,131-136
+  s_8ebd352e869635::t_361e6c21e9da1f 2
+  s_8ebd352e869635::t_be198bf09df636 153
+ui/mantine-ui/src/App.test.tsx
+  s_8ebd352e869635::t_05e5198d18061e 1
+  s_8ebd352e869635::t_6e138b3b0951bc 25-29,32,48
+  s_8ebd352e869635::t_9ca3d75d1dadd9 36-38
+  s_8ebd352e869635::t_1a8e488285abf0 2
+  s_8ebd352e869635::t_b5c2d18f1a3440 39-47
+  s_8ebd352e869635::t_3e3779a4081536 34-35
+  s_8ebd352e869635::t_829aa6fb6ac826 30-31,33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "2015e379c53282f29e0915054da0eb144597f7f4",
+  "prompts": {},
+  "sessions": {
+    "s_8ebd352e869635": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "onyx-conga",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
