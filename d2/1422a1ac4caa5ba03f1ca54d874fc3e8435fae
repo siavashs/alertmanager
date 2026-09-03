@@ -1,0 +1,23 @@
+ui/mantine-ui/src/components/Header.module.css
+  s_563930d2572e43::t_8f965d2785c5b2 1-5
+ui/mantine-ui/src/App.test.tsx
+  s_563930d2572e43::t_3dc21cd49ff08b 19,22
+  s_563930d2572e43::t_60c730042329a4 18,20-21,23
+  s_563930d2572e43::t_1f1ee0ad2b3afb 4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "d21422a1ac4caa5ba03f1ca54d874fc3e8435fae",
+  "prompts": {},
+  "sessions": {
+    "s_563930d2572e43": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "daffodil-whale",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
