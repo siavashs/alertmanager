@@ -1,0 +1,62 @@
+ui/mantine-ui/src/pages/Status.page.test.tsx
+  s_de678b6b51d467::t_ef08694890ae80 3-4,7
+  s_de678b6b51d467::t_79bfb282579b12 1-2,5-6,8-62
+ui/mantine-ui/src/data/connect.test.ts
+  s_de678b6b51d467::t_60b951261e54be 1-45
+.github/workflows/ui-ci.yml
+  s_de678b6b51d467::t_40dcacd0737102 11
+ui/mantine-ui/buf.gen.yaml
+  s_de678b6b51d467::t_a52bb0d5588a5c 1-8
+ui/mantine-ui/biome.json
+  s_de678b6b51d467::t_86fa0eac2f60ea 9
+ui/mantine-ui/src/data/status.test.ts
+  s_de678b6b51d467::t_ef08694890ae80 4
+  s_de678b6b51d467::t_58a970c92cc873 1-3,5-65
+ui/mantine-ui/test-utils/render.tsx
+  s_de678b6b51d467::t_80030d9d2834a4 20-24
+  s_de678b6b51d467::t_8b2873c7f60bee 1-2,5,8,11-14,16
+  s_de678b6b51d467::t_ef08694890ae80 3,15
+ui/mantine-ui/package-lock.json
+  s_de678b6b51d467::t_8c5c83d34c799b 11-14,26-27,311-557,2074-2086,2391-2408,2971-2977
+ui/mantine-ui/src/App.tsx
+  s_de678b6b51d467::t_194f0cf53c2495 37-40
+  s_de678b6b51d467::t_ef08694890ae80 6,41-62
+  s_de678b6b51d467::t_ddcf746d99b14f 63-65
+  s_de678b6b51d467::t_a69fceae6602e8 15
+ui/mantine-ui/package.json
+  s_de678b6b51d467::t_e406a480008801 22-25,37-38
+  s_de678b6b51d467::t_d86cea570aed32 8-9
+ui/mantine-ui/Makefile
+  s_de678b6b51d467::t_53bd70db4b4ca3 2
+  s_de678b6b51d467::t_5a19a463e9908a 13
+ui/mantine-ui/src/data/connect.ts
+  s_de678b6b51d467::t_ce35d1e82f18c4 1-16
+ui/mantine-ui/src/pages/Config.page.test.tsx
+  s_de678b6b51d467::t_ef08694890ae80 3-4,7
+  s_de678b6b51d467::t_2663140664055f 1-2,5-6,8-35
+ui/mantine-ui/src/data/status.ts
+  s_de678b6b51d467::t_ef08694890ae80 48-57
+  s_de678b6b51d467::t_50643e235d32a7 1,3-14,17-29,31-47
+ui/mantine-ui/src/gen/status/v3alpha/status_pb.ts
+  s_de678b6b51d467::t_13db604824feb3 1-263
+ui/mantine-ui/src/pages/Status.page.tsx
+  s_de678b6b51d467::t_b250a86a37fc86 46-47
+  s_de678b6b51d467::t_85a16d5463333a 55
+  s_de678b6b51d467::t_73282280a06a0b 1,6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "2adc222205fe6171b4be57a023c943459249d119",
+  "prompts": {},
+  "sessions": {
+    "s_de678b6b51d467": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "whip-earthquake",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
