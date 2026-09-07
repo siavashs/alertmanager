@@ -1,0 +1,37 @@
+provider/mem/mem_test.go
+  s_ca75ea5f1c7df3::t_337b66c0ff2a01 32,41,53,65,92,95,143,145,196,223,299,313,331,366,408,443,455,462,495,569
+limit/bucket.go
+  s_ca75ea5f1c7df3::t_337b66c0ff2a01 100-114
+store/store_test.go
+  s_ca75ea5f1c7df3::t_337b66c0ff2a01 24,29,43,54,62,74,83,91,100,109,117,129,142-190,193-194,202,206,216
+docs/configuration.md
+  s_ca75ea5f1c7df3::t_337b66c0ff2a01 32-38
+provider/mem/mem.go
+  s_ca75ea5f1c7df3::t_337b66c0ff2a01 31,72,75,78,100,198,251,296,303,344-348,383-385
+provider/provider.go
+  s_ca75ea5f1c7df3::t_337b66c0ff2a01 22,31,96,102,104
+CHANGELOG.md
+  s_ca75ea5f1c7df3::t_cc2a22e3deb6f2 3-5
+limit/bucket_test.go
+  s_ca75ea5f1c7df3::t_337b66c0ff2a01 241-350
+docs/alertmanager.md
+  s_ca75ea5f1c7df3::t_337b66c0ff2a01 81-89,95
+store/store.go
+  s_ca75ea5f1c7df3::t_337b66c0ff2a01 24,43-44,53-54,73,96,112,138,150,161,163-182,192,211,215
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "32a9c18d2915faeea169f8aa61fdadc2497f35fb",
+  "prompts": {},
+  "sessions": {
+    "s_ca75ea5f1c7df3": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ff101917affe64miG2yR7aze2m",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}

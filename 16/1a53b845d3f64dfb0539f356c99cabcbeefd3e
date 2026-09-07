@@ -1,0 +1,131 @@
+eventrecorder/events.go
+  s_23e3c6c871dc68::t_8e286cfb0b76d5 500
+  s_19d36c5207f2db::t_58eeb95f2ff2ed 514,533,548,562
+  s_23e3c6c871dc68::t_714fa6ae632aea 53-55,57,424,490-492
+  s_19d36c5207f2db::t_674a113dcab720 365-367,515-526,534-545,550
+  s_19d36c5207f2db::t_08d8ef99a56690 23,34-36,38,60-63,65-66,70,78,85,92,111,125-127,129-131,134-135,139-141,147-149,155-158,160,162-164,167-170,172,174-177,179-182,184,186-188,191-192,194-197,199-201,204-205,207-210,212-214,217-218,225-226,228-232,234-245,247-254,256-260,263-266,268-272,275-278,280,282-284,287-288,294,296-297,300,304-305,313-318,320,323-332,334-337,339-341,364,368-375,377,389-395,404-414,416,422-423,425,427-438,440-441,456-481,504-513,546-547,570-577,583,586-602
+  s_23e3c6c871dc68::t_04a0f719497ab8 22,43-52,80-82,87-89,94-96,128,133,142,144,150,152,193,206,219-222,295,299,306-308,343-352
+  s_23e3c6c871dc68::t_7896e34d36df7b 19,24,27,29,37,39,41,58,79,83-84,86,90-91,93,97-110,112-124,136,145-146,159,171,183,189,202,227,233,261,267,273,279,301,309-312,319,321,356-359,361,380-382,384,386,399-403,417,419-421,426,442-455,482,484-489,493-499,501-503,527,529-532,551-561,563-569,578-582,584-585,603-618
+  s_23e3c6c871dc68::t_e2ebf10a154aa0 40,64,67-69,71-73,75,338,342
+  s_23e3c6c871dc68::t_710b2d8f55e7e5 17,385
+  s_23e3c6c871dc68::t_3a67dc48124d4e 42
+  s_23e3c6c871dc68::t_c20049fae5703b 418
+  s_23e3c6c871dc68::t_ea662d62ab5c12 483
+  s_23e3c6c871dc68::t_cb17ff912ed532 528
+  s_19d36c5207f2db::t_a77d89afb725ba 549
+proto/eventrecorder/events/v2/events.proto
+  s_23e3c6c871dc68::t_4b2a57127cf5cc 1-185
+app/app.go
+  s_19d36c5207f2db::t_e0b16dcf10367f 267-268,271-272
+inhibit/inhibit.go
+  s_19d36c5207f2db::t_e0b16dcf10367f 225,227-228
+silence/silence.go
+  s_19d36c5207f2db::t_e0b16dcf10367f 287,289,878-879,926-927
+config/config_test.go
+  s_23e3c6c871dc68::t_1457521e529843 98-99
+  s_23e3c6c871dc68::t_7f29174a25f223 64,73-97
+eventrecorder/events_test.go
+  s_23e3c6c871dc68::t_70683c37c1e719 27
+  s_23e3c6c871dc68::t_45611413791f54 32-36
+  s_19d36c5207f2db::t_b9dbec3feb2cd9 25
+  s_23e3c6c871dc68::t_f3e6f97356c8a4 79-82,84-87,91
+  s_19d36c5207f2db::t_58eeb95f2ff2ed 114-115,117-118
+  s_23e3c6c871dc68::t_6a41c0b695e266 92,132-149,151-156
+  s_19d36c5207f2db::t_674a113dcab720 93-113,116,119-131
+  s_23e3c6c871dc68::t_40b4a19cb68ba2 18,23,30-31,41-42,45-46,49-55,58-59,62-63,66,74-75
+  s_19d36c5207f2db::t_00e39ad2a0d902 39,44,56,61,73,76-78,83,88-90
+eventrecorder/recorder_test.go
+  s_23e3c6c871dc68::t_c72ea61f6666b7 212-237
+  s_19d36c5207f2db::t_00e39ad2a0d902 33,41,55-56,72,207,315
+  s_23e3c6c871dc68::t_6a41c0b695e266 254-298
+  s_23e3c6c871dc68::t_75c04896b11d8c 312-314,316
+  s_23e3c6c871dc68::t_8e8d3038f7a78b 26
+  s_23e3c6c871dc68::t_7f29174a25f223 60-63,74,189-190,192-206,208-210
+  s_19d36c5207f2db::t_674a113dcab720 238-253
+  s_23e3c6c871dc68::t_e350610ac0f1e8 317
+  s_23e3c6c871dc68::t_62bec7a99a964d 191
+  s_1454ae6bc0f0d1::t_5b9dc0206d152b 211
+eventrecorder/events/v2/events.pb.go
+  s_23e3c6c871dc68::t_195f12e5009b81 1-1888
+eventrecorder/webhook_test.go
+  s_19d36c5207f2db::t_e2ad17a6fd5b85 197
+dispatch/dispatch.go
+  s_19d36c5207f2db::t_7ce168e7bac4d2 892-893,968-969,974,976
+  s_23e3c6c871dc68::t_9b1e58f89db446 975,977
+CHANGELOG.md
+  s_23e3c6c871dc68::t_2a5ab996ca228e 6
+notify/event.go
+  s_23e3c6c871dc68::t_8489a7ca5a5011 31,43,53,82,94-97
+  s_23e3c6c871dc68::t_d1ab5716fdd76b 16,38,40,44,54,63,66,68,70,72,74,76,83,98-103
+  s_19d36c5207f2db::t_7ce168e7bac4d2 27-28,39,47,57,85,92,106-107,110-111
+buf.yaml
+  s_23e3c6c871dc68::t_7a617e47d3dcae 12-13
+eventrecorder/webhook.go
+  s_19d36c5207f2db::t_7b46b06b7d46f1 298
+  s_23e3c6c871dc68::t_04a0f719497ab8 299
+provider/mem/mem.go
+  s_19d36c5207f2db::t_e0b16dcf10367f 350-351
+eventrecorder/kafka.go
+  s_23e3c6c871dc68::t_04a0f719497ab8 230,232
+  s_19d36c5207f2db::t_7b46b06b7d46f1 224
+eventrecorder/config.go
+  s_23e3c6c871dc68::t_9ae87ceeb4b733 16-27,35,42-55,60-63,75-76
+  s_23e3c6c871dc68::t_62bec7a99a964d 56-59
+eventrecorder/stdout.go
+  s_23e3c6c871dc68::t_04a0f719497ab8 45
+  s_19d36c5207f2db::t_7b46b06b7d46f1 44
+docs/configuration.md
+  s_23e3c6c871dc68::t_36d23e2449ec1b 2148-2151
+  s_23e3c6c871dc68::t_7f05e0c64c7cd0 2169-2170,2175
+  s_23e3c6c871dc68::t_4b2a57127cf5cc 2171
+  s_23e3c6c871dc68::t_8bf1ff10951c84 2172-2174
+eventrecorder/kafka_test.go
+  s_19d36c5207f2db::t_e2ad17a6fd5b85 109-110,121,145,156,180,191-192
+eventrecorder/file.go
+  s_19d36c5207f2db::t_7b46b06b7d46f1 173
+  s_23e3c6c871dc68::t_04a0f719497ab8 174
+notify/retry_stage.go
+  s_19d36c5207f2db::t_e0b16dcf10367f 182
+  s_23e3c6c871dc68::t_8489a7ca5a5011 183
+eventrecorder/recorder.go
+  s_23e3c6c871dc68::t_714fa6ae632aea 293,295-296,299-300,348
+  s_23e3c6c871dc68::t_8e8d3038f7a78b 311,317-318
+  s_23e3c6c871dc68::t_e2ebf10a154aa0 329,334-336,341
+  s_23e3c6c871dc68::t_04a0f719497ab8 86,230-240,326-328,332,382-383
+  s_19d36c5207f2db::t_674a113dcab720 313-314
+  s_23e3c6c871dc68::t_6a41c0b695e266 105-106
+  s_19d36c5207f2db::t_78065687325b7d 71,73,85,121,154,257,319,330,337,339,342,349-362,364
+  s_23e3c6c871dc68::t_18d5cf018556c3 345
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "161a53b845d3f64dfb0539f356c99cabcbeefd3e",
+  "prompts": {},
+  "sessions": {
+    "s_1454ae6bc0f0d1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_057cdf008ffekqySTr6HhVv2lY",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    },
+    "s_19d36c5207f2db": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_055e4fb9effeUAxkwhv3JCKNWR",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_23e3c6c871dc68": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_090571f67ffe9AqMRerhgddNj4",
+        "model": "gpt-5.6"
+      },
+      "human_author": null
+    }
+  }
+}

@@ -1,0 +1,53 @@
+api/v2/models/matcher.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 28,111,117
+api/v2/models/peer_status.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 28,91,97
+api/v2/models/postable_alert.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 30,62,74,100,106,237,243
+api/v2/models/silence_status.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 28-29,61,114,120
+api/v2/models/postable_silence.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 28,48,56,74,80,123,129
+api/v2/models/alertmanager_status.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 29,256,262
+api/v2/models/alert_status.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 28-29,112,165,171
+api/v2/models/alert.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 30,138,144
+api/v2/models/receiver.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 30,137,143
+api/v2/models/alert_group.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 31,302,308
+api/v2/client/silence/post_silences_responses.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 31,296,302
+api/v2/models/cluster_status.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 31-32,104,195,201
+api/v2/models/gettable_alert.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 31,91,111,153,159,437,443
+api/v2/models/gettable_silence.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 30,64,76,102,108,234,240
+api/v2/models/alertmanager_config.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 28,74,80
+api/v2/models/silence.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 30,250,256
+api/v2/restapi/operations/silence/post_silences.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 28,100,106
+api/v2/models/version_info.go
+  s_9bbb3d61a49861::t_492baa27ee8efe 28,159,165
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "cc6b54582f552c9ac37857b8fc643d2e941a39a0",
+  "prompts": {},
+  "sessions": {
+    "s_9bbb3d61a49861": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "boatneck-coriander",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}

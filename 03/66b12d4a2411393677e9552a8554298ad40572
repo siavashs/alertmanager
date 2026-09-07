@@ -1,0 +1,54 @@
+doc/examples/cloudflare-pipelines/config.yml
+  s_cb82fd8be94263::t_55f5cfcf974fd6 126
+  s_cb82fd8be94263::t_a49b90ac9e8a17 123-125
+  s_cb82fd8be94263::t_eed0eaa7a8eb81 127-129
+eventrecorder/webhook_test.go
+  s_cb82fd8be94263::t_c8bc1f21c44123 411-423
+  s_cb82fd8be94263::t_04ffec42ce4b7e 23,99-115
+  s_cb82fd8be94263::t_cdd36b8527a937 116-117
+eventrecorder/webhook.go
+  s_cb82fd8be94263::t_6ee8a854343b55 108
+  s_cb82fd8be94263::t_335488f07e9d08 155
+  s_cb82fd8be94263::t_91f719f7770a1f 240-245,249
+  s_cb82fd8be94263::t_a4a282e4b53760 80-81,83,85-86
+  s_cb82fd8be94263::t_0c4f6f49dfda2e 24,26,451-463
+  s_cb82fd8be94263::t_91ebc55e4af1c8 42-43
+  s_cb82fd8be94263::t_40b2928ed0801b 84
+doc/examples/cloudflare-pipelines/README.md
+  s_cb82fd8be94263::t_ac5daa013f363d 75-77
+  s_cb82fd8be94263::t_0311ea9bc4e607 68
+  s_cb82fd8be94263::t_32167c003cfe25 65-67
+  s_cb82fd8be94263::t_2362bc224617d0 69-74
+  s_cb82fd8be94263::t_812f55a213085c 78-80
+docs/configuration.md
+  s_cb82fd8be94263::t_419217df282937 2229-2230
+  s_cb82fd8be94263::t_67c280c5495699 2191-2193
+doc/examples/cloudflare-pipelines/pipeline.sql
+  s_9573c115f94a9b::t_996873dd0f431e 1-170
+doc/examples/cloudflare-pipelines/stream-schema.json
+  s_9573c115f94a9b::t_0ba5a976a2ec9b 1-24
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "0366b12d4a2411393677e9552a8554298ad40572",
+  "prompts": {},
+  "sessions": {
+    "s_9573c115f94a9b": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "spotty-watchmaker",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    },
+    "s_cb82fd8be94263": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "sturdy-wasabi",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}

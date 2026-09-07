@@ -1,0 +1,98 @@
+eventrecorder/event_v1.go
+  s_23e3c6c871dc68::t_714fa6ae632aea 189
+  s_23e3c6c871dc68::t_83c595b87ecea3 1-188,190-278
+eventrecorder/config.go
+  s_23e3c6c871dc68::t_62bec7a99a964d 56-59
+  s_23e3c6c871dc68::t_9ae87ceeb4b733 16-27,35,42-55,60-63,75-76
+provider/mem/mem.go
+  s_23e3c6c871dc68::t_94107b02195dc3 350
+eventrecorder/stdout.go
+  s_23e3c6c871dc68::t_da1c170b849c87 20,47
+eventrecorder/webhook.go
+  s_23e3c6c871dc68::t_da1c170b849c87 32,300
+eventrecorder/recorder.go
+  s_23e3c6c871dc68::t_da1c170b849c87 33,124,229,261,276,281,283,286
+  s_23e3c6c871dc68::t_8e8d3038f7a78b 73-75,308,313-314
+  s_23e3c6c871dc68::t_18d5cf018556c3 37,77-79,277-280,282,315,324,326,330
+  s_23e3c6c871dc68::t_714fa6ae632aea 290,292-293,296-297,333
+eventrecorder/file.go
+  s_23e3c6c871dc68::t_da1c170b849c87 26,175
+eventrecorder/kafka.go
+  s_23e3c6c871dc68::t_da1c170b849c87 226
+eventrecorder/event_v1_test.go
+  s_23e3c6c871dc68::t_40b4a19cb68ba2 1-49
+  s_23e3c6c871dc68::t_f3e6f97356c8a4 50-76
+app/app.go
+  s_23e3c6c871dc68::t_94107b02195dc3 267-268,271-272
+dispatch/dispatch.go
+  s_23e3c6c871dc68::t_9b1e58f89db446 892,969,975-978
+silence/silence.go
+  s_23e3c6c871dc68::t_94107b02195dc3 287,289,878-879,926-927
+buf.yaml
+  s_23e3c6c871dc68::t_7a617e47d3dcae 12-13
+eventrecorder/recorder_test.go
+  s_23e3c6c871dc68::t_75c04896b11d8c 225-227,229
+  s_23e3c6c871dc68::t_8e8d3038f7a78b 27,207
+  s_23e3c6c871dc68::t_e350610ac0f1e8 24,34,42,228,230
+  s_23e3c6c871dc68::t_40b4a19cb68ba2 56-57
+  s_23e3c6c871dc68::t_7f29174a25f223 61-64,74,189-190,192-206,208-210
+  s_23e3c6c871dc68::t_62bec7a99a964d 191
+  s_1454ae6bc0f0d1::t_5b9dc0206d152b 211
+eventrecorder/events.go
+  s_23e3c6c871dc68::t_710b2d8f55e7e5 17,262
+  s_23e3c6c871dc68::t_8e8d3038f7a78b 340,342-343,346,349,352,359
+  s_23e3c6c871dc68::t_8e286cfb0b76d5 325
+  s_23e3c6c871dc68::t_7896e34d36df7b 19,22,25-26,31-35,45-114,118-124,128-134,136,138-144,146-154,156,158-163,173-174,178-189,191,193-199,201,203-209,213-214,220-222,225-243,245,249-252,254,257-259,261,263,266-277,281-283,287-289,291-305,309-311,313-314,318-324,326-339,341,344-345,347-348,350-351,353-358,360-389,391
+  s_23e3c6c871dc68::t_714fa6ae632aea 38-40,42,284-286,315-317
+  s_23e3c6c871dc68::t_38ccc50c13d453 164-172
+proto/eventrecorder/events/v2/events.proto
+  s_23e3c6c871dc68::t_4b2a57127cf5cc 1-185
+config/config_test.go
+  s_23e3c6c871dc68::t_7f29174a25f223 64,73-97
+  s_23e3c6c871dc68::t_1457521e529843 98-99
+notify/event.go
+  s_23e3c6c871dc68::t_d1ab5716fdd76b 16,27-28,31,38-40,43-44,47,53-54,57,63,66,68,70,72,74,76,82-83,85,92,98-103,106-107,110-111
+  s_23e3c6c871dc68::t_40b4a19cb68ba2 97
+eventrecorder/events_test.go
+  s_23e3c6c871dc68::t_f3e6f97356c8a4 77-82,84-89
+  s_23e3c6c871dc68::t_70683c37c1e719 25
+  s_23e3c6c871dc68::t_40b4a19cb68ba2 18,23,28-29,37,39-40,42-44,47-54,56-57,59-61,64,71-76
+  s_23e3c6c871dc68::t_45611413791f54 30-34
+notify/retry_stage.go
+  s_23e3c6c871dc68::t_94107b02195dc3 182
+CHANGELOG.md
+  s_23e3c6c871dc68::t_2a5ab996ca228e 6
+inhibit/inhibit.go
+  s_23e3c6c871dc68::t_94107b02195dc3 225,227
+docs/configuration.md
+  s_23e3c6c871dc68::t_4b2a57127cf5cc 2171
+  s_23e3c6c871dc68::t_8bf1ff10951c84 2172-2174
+  s_23e3c6c871dc68::t_36d23e2449ec1b 2148-2151
+  s_23e3c6c871dc68::t_7f05e0c64c7cd0 2169-2170,2175
+eventrecorder/events/v2/events.pb.go
+  s_23e3c6c871dc68::t_195f12e5009b81 1-1888
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "a6274ad0fd41584b37305bb06373fb2bc30d5d04",
+  "prompts": {},
+  "sessions": {
+    "s_1454ae6bc0f0d1": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_057cdf008ffekqySTr6HhVv2lY",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    },
+    "s_23e3c6c871dc68": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_090571f67ffe9AqMRerhgddNj4",
+        "model": "gpt-5.6"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
