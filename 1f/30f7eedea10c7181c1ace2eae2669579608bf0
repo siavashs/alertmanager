@@ -1,0 +1,21 @@
+packaging/amtool/deb-package-split.env
+  s_0df80c5fb7d48e::t_006e3ebe4e5861 1-12
+.gitlab-ci.yml
+  s_0df80c5fb7d48e::t_006e3ebe4e5861 33-36,38-41,43,63,77,82,85-88,90,94-96,99,102-104,106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "1f30f7eedea10c7181c1ace2eae2669579608bf0",
+  "prompts": {},
+  "sessions": {
+    "s_0df80c5fb7d48e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f83aaa85effeIZMUv4YUDZgRyW",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Andy Grunwald <agrunwald@cloudflare.com>"
+    }
+  }
+}
