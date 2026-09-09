@@ -1,0 +1,35 @@
+eventrecorder/events.go
+  s_5bed47869034d0::t_6c06416eb3f1f0 64-65,81,133
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "75f3d55a578e4051fbcaaca5f8b12184d9c6c58e",
+  "prompts": {},
+  "sessions": {
+    "s_19d36c5207f2db": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_055e4fb9effeUAxkwhv3JCKNWR",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_23e3c6c871dc68": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_090571f67ffe9AqMRerhgddNj4",
+        "model": "gpt-5.6"
+      },
+      "human_author": null
+    },
+    "s_5bed47869034d0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_033b928a0ffebQAyUt2kX2AW9z",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
