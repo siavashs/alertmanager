@@ -154,6 +154,16 @@ func TestPerAlertLimitResolved(t *testing.T) {
 			UpdatedAt: time.Now(),
 		}
 	}
+	assertLimited := func(t *testing.T, err error, resolved bool) {
+		t.Helper()
+		require.ErrorIs(t, err, ErrLimited)
+		var limitErr interface {
+			error
+			AlertResolved() bool
+		}
+		require.ErrorAs(t, err, &limitErr)
+		require.Equal(t, resolved, limitErr.AlertResolved())
+	}
 
 	t.Run("resolved frees the slot held by an admitted firing alert", func(t *testing.T) {
 		a := NewAlerts().WithPerAlertLimit(1)
@@ -162,7 +172,7 @@ func TestPerAlertLimitResolved(t *testing.T) {
 		require.NoError(t, a.Set(newAlert("server1", false)))
 
 		// A second firing alert is limited while the bucket is full.
-		require.ErrorIs(t, a.Set(newAlert("server2", false)), ErrLimited)
+		assertLimited(t, a.Set(newAlert("server2", false)), false)
 
 		// Resolving the admitted alert frees its slot and is stored.
 		require.NoError(t, a.Set(newAlert("server1", true)))
@@ -174,7 +184,7 @@ func TestPerAlertLimitResolved(t *testing.T) {
 	t.Run("resolved without an admitted firing counterpart is dropped", func(t *testing.T) {
 		a := NewAlerts().WithPerAlertLimit(1)
 
-		require.ErrorIs(t, a.Set(newAlert("ghost", true)), ErrLimited)
+		assertLimited(t, a.Set(newAlert("ghost", true)), true)
 		require.Zero(t, a.Len())
 	})
 
@@ -184,7 +194,7 @@ func TestPerAlertLimitResolved(t *testing.T) {
 		require.NoError(t, a.Set(newAlert("server1", false)))
 		require.NoError(t, a.Set(newAlert("server1", true)))
 		// The slot was already freed by the first resolution.
-		require.ErrorIs(t, a.Set(newAlert("server1", true)), ErrLimited)
+		assertLimited(t, a.Set(newAlert("server1", true)), true)
 	})
 }
 

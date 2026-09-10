@@ -92,11 +92,11 @@ When the limit is reached any new firing alerts are dropped, while heartbeats fr
 already known alerts are still processed. Known alerts (fingerprints) automatically
 expire to make room for new alerts.
 
-Resolved notifications are handled specially. A resolved notification is only
-forwarded if its firing counterpart was previously admitted (its fingerprint is
-still tracked); forwarding it frees the slot the firing alert was holding. A
-resolved notification with no previously admitted firing alert is dropped as
-noise, since nothing downstream ever received a firing alert for it.
+Resolved alerts are handled specially. A resolved alert is only forwarded if its
+firing counterpart was previously admitted (its fingerprint is still tracked);
+forwarding it frees the slot the firing alert was holding. A resolved alert with
+no previously admitted firing alert is dropped as noise, since nothing downstream
+ever received a firing alert for it.
 
 This feature is useful when an unexpected high number of instances of the same alert are sent to Alertmanager.
 Limiting the number of alerts per alertname can prevent reliability issues and avoid alert receivers from being flooded.

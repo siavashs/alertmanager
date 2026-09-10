@@ -31,8 +31,8 @@ where the unit is in bytes.
 
 To limit the maximum number of active alerts per alertname, use the
 `--alerts.per-alertname-limit` flag. When the limit is reached, new firing alerts
-for that alertname are dropped. Resolved notifications are only forwarded when
-their firing counterpart was previously admitted; otherwise they are dropped. See
+for that alertname are dropped. Resolved alerts are only forwarded when their
+firing counterpart was previously admitted; otherwise they are dropped. See
 [Alert limits](alertmanager.md#alert-limits-optional) for details.
 
 All limits are disabled by default.

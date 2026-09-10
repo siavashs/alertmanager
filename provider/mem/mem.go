@@ -341,7 +341,11 @@ func (a *Alerts) Put(ctx context.Context, alerts ...*alert.Alert) error {
 					labels = append(labels, alert.Name())
 				}
 				state := "firing"
-				if alert.Resolved() {
+				var limitErr interface {
+					error
+					AlertResolved() bool
+				}
+				if errors.As(err, &limitErr) && limitErr.AlertResolved() {
 					state = "resolved"
 				}
 				labels = append(labels, state)

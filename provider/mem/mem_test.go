@@ -25,6 +25,7 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/testutil"
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/common/promslog"
 	"github.com/stretchr/testify/require"
@@ -206,6 +207,34 @@ func TestAlertsPut(t *testing.T) {
 		}
 		require.NoError(t, alertDiff(a, res), "unexpected alert: %d", i)
 	}
+}
+
+func TestAlertsLimitedTotalState(t *testing.T) {
+	ctx := t.Context()
+	registry := prometheus.NewRegistry()
+	alerts, err := NewAlerts(ctx, 30*time.Minute, 1, noopCallback{}, promslog.NewNopLogger(), eventrecorder.NopRecorder(), registry, nil)
+	require.NoError(t, err)
+	t.Cleanup(alerts.Close)
+
+	now := time.Now()
+	newAlert := func(instance string, endsAt time.Time) *alert.Alert {
+		return &alert.Alert{
+			Alert: model.Alert{
+				Labels:   model.LabelSet{"alertname": "Test", "instance": model.LabelValue(instance)},
+				StartsAt: now.Add(-time.Hour),
+				EndsAt:   endsAt,
+			},
+			UpdatedAt: now,
+		}
+	}
+
+	require.NoError(t, alerts.Put(ctx,
+		newAlert("admitted", now.Add(time.Hour)),
+		newAlert("limited", now.Add(time.Hour)),
+		newAlert("unmatched", now.Add(-time.Hour)),
+	))
+	require.Equal(t, float64(1), testutil.ToFloat64(alerts.alertsLimitedTotal.WithLabelValues("firing")))
+	require.Equal(t, float64(1), testutil.ToFloat64(alerts.alertsLimitedTotal.WithLabelValues("resolved")))
 }
 
 func TestAlertsSubscribe(t *testing.T) {

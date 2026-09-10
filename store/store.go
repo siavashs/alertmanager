@@ -28,6 +28,14 @@ import (
 // ErrLimited is returned if a Store has reached the per-alert limit.
 var ErrLimited = errors.New("alert limited")
 
+type limitError struct {
+	resolved bool
+}
+
+func (e limitError) Error() string       { return ErrLimited.Error() }
+func (e limitError) Unwrap() error       { return ErrLimited }
+func (e limitError) AlertResolved() bool { return e.resolved }
+
 // ErrNotFound is returned if a Store cannot find the Alert.
 var ErrNotFound = errors.New("alert not found")
 
@@ -168,7 +176,7 @@ func (a *Alerts) Set(alert *alert.Alert) error {
 			// for it from us.
 			bucket, ok := a.limits[name]
 			if !ok || !bucket.Remove(fp) {
-				return ErrLimited
+				return limitError{resolved: true}
 			}
 		} else {
 			// Firing alert: apply the per-alert limit.
@@ -178,7 +186,7 @@ func (a *Alerts) Set(alert *alert.Alert) error {
 				a.limits[name] = bucket
 			}
 			if !bucket.Upsert(fp, alert.EndsAt) {
-				return ErrLimited
+				return limitError{}
 			}
 		}
 	}
