@@ -1,0 +1,17 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "58516007bb0ab09e54e628ac500b2b82088ed6b6",
+  "prompts": {},
+  "sessions": {
+    "s_2a7df3966f691d": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "material-otter",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
