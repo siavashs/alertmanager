@@ -1,0 +1,19 @@
+packaging/amtool/deb-package-split.env
+  s_0df80c5fb7d48e::t_e2fe04d5c2e4ae 7,9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "8bf5cd4b6e61bd43408fb1e85837d1ba3a18b5eb",
+  "prompts": {},
+  "sessions": {
+    "s_0df80c5fb7d48e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f83aaa85effeIZMUv4YUDZgRyW",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Andy Grunwald <agrunwald@cloudflare.com>"
+    }
+  }
+}

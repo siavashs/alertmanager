@@ -1,0 +1,28 @@
+.gitlab-ci.yml
+  s_0df80c5fb7d48e::t_e1d6be3f9347ba 31-44,90-116,118-119,121-123
+  s_0df80c5fb7d48e::t_5b2e117c753dbe 117,120
+  s_0df80c5fb7d48e::t_2ff05a95a5b8b6 124-126
+.gitignore
+  s_0df80c5fb7d48e::t_65d2eb3d8f5310 6
+  s_0df80c5fb7d48e::t_e1d6be3f9347ba 26
+nfpm-amtool.yaml
+  s_0df80c5fb7d48e::t_e1d6be3f9347ba 1-20
+nfpm.yaml
+  s_0df80c5fb7d48e::t_e1d6be3f9347ba 15-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "ce35a44918f8f85131e10ab084e636371dfff9a7",
+  "prompts": {},
+  "sessions": {
+    "s_0df80c5fb7d48e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f83aaa85effeIZMUv4YUDZgRyW",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Andy Grunwald <agrunwald@cloudflare.com>"
+    }
+  }
+}
