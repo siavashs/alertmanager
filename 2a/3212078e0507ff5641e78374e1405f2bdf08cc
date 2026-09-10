@@ -1,0 +1,20 @@
+cloudflare/Dockerfile
+  s_a7f5e6359483df::t_caa42ba45fe38a 2
+  s_a7f5e6359483df::t_0ccc964b7e6acd 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "2a3212078e0507ff5641e78374e1405f2bdf08cc",
+  "prompts": {},
+  "sessions": {
+    "s_a7f5e6359483df": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "chain-limpet",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
