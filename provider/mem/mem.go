@@ -30,7 +30,6 @@ import (
 
 	"github.com/prometheus/alertmanager/alert"
 	"github.com/prometheus/alertmanager/eventrecorder"
-	"github.com/prometheus/alertmanager/eventrecorder/eventrecorderpb"
 	"github.com/prometheus/alertmanager/featurecontrol"
 	"github.com/prometheus/alertmanager/provider"
 	"github.com/prometheus/alertmanager/store"
@@ -354,7 +353,7 @@ func (a *Alerts) Put(ctx context.Context, alerts ...*alert.Alert) error {
 		a.callback.PostStore(alert, existing)
 
 		if !existing {
-			a.recorder.RecordEvent(ctx, func() *eventrecorderpb.EventData {
+			a.recorder.RecordEvent(ctx, func() eventrecorder.EventData {
 				return eventrecorder.NewAlertCreatedEvent(alert)
 			})
 		}

@@ -1,7 +1,8 @@
 ## main / (unreleased)
 
-* [CHANGE] limit: `alertmanager_alerts_limited_total` now has a `state` label (`firing`/`resolved`) to distinguish dropped firing alerts from dropped resolved notifications. Dashboards/alerts using this metric must be updated.
-* [CHANGE] limit: With `--alerts.per-alertname-limit` set, a resolved notification is only forwarded if its firing counterpart was previously admitted (which frees its slot); resolved notifications with no admitted firing alert are now dropped.
+Please do **not** add any entries in this section. If your change affects
+behaviour, describe it in the pull request description. Those entries are added
+here, when the release is prepared.
 
 ## 0.34.0 / 2026-08-16
 

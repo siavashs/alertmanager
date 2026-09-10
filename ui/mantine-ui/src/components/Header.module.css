@@ -1,3 +1,8 @@
+.header {
+  color: var(--mantine-color-white);
+  background-color: var(--mantine-color-dark-6);
+}
+
 .navMain {
   flex: 1;
 }
@@ -19,6 +24,13 @@
   }
 
   [data-mantine-color-scheme] &[aria-current="page"] {
+    background-color: var(--mantine-color-blue-filled);
+    color: var(--mantine-color-white);
+  }
+}
+
+.menuItem {
+  &[aria-current="page"] {
     background-color: var(--mantine-color-blue-filled);
     color: var(--mantine-color-white);
   }

@@ -39,7 +39,6 @@ import (
 	"github.com/prometheus/alertmanager/config"
 	"github.com/prometheus/alertmanager/dispatch"
 	"github.com/prometheus/alertmanager/eventrecorder"
-	"github.com/prometheus/alertmanager/eventrecorder/eventrecorderpb"
 	"github.com/prometheus/alertmanager/httpserver"
 	"github.com/prometheus/alertmanager/marker"
 	"github.com/prometheus/alertmanager/nflog"
@@ -265,23 +264,12 @@ func (a *App) setup() error {
 	a.onStop("event recorder", eventRec.Close)
 
 	recordCtx := eventrecorder.WithEventRecording(context.Background())
-	eventRec.RecordEvent(recordCtx, func() *eventrecorderpb.EventData {
-		return &eventrecorderpb.EventData{
-			EventType: &eventrecorderpb.EventData_AlertmanagerStartupEvent{
-				AlertmanagerStartupEvent: &eventrecorderpb.AlertmanagerStartupEvent{
-					Version:      version.Version,
-					BuildContext: version.BuildContext(),
-				},
-			},
-		}
+	eventRec.RecordEvent(recordCtx, func() eventrecorder.EventData {
+		return eventrecorder.NewAlertmanagerStartupEvent(version.Version, version.BuildContext())
 	})
 	a.onStop("shutdown event", func() error {
-		eventRec.RecordEvent(recordCtx, func() *eventrecorderpb.EventData {
-			return &eventrecorderpb.EventData{
-				EventType: &eventrecorderpb.EventData_AlertmanagerShutdownEvent{
-					AlertmanagerShutdownEvent: &eventrecorderpb.AlertmanagerShutdownEvent{},
-				},
-			}
+		eventRec.RecordEvent(recordCtx, func() eventrecorder.EventData {
+			return eventrecorder.NewAlertmanagerShutdownEvent()
 		})
 		return nil
 	})
@@ -395,16 +383,24 @@ func (a *App) setup() error {
 	}
 
 	apih, err := api.New(api.Options{
-		Alerts:          alerts,
-		Silences:        silences,
-		GroupMutedFunc:  groupMarker.Muted,
-		Peer:            clusterPeer,
-		Timeout:         opts.HTTPTimeout,
-		Concurrency:     opts.GetConcurrency,
-		Logger:          logger.With("component", "api"),
-		Registry:        reg,
-		RequestDuration: m.requestDuration,
-		GroupFunc:       groupFn,
+		Alerts:                     alerts,
+		Silences:                   silences,
+		GroupMutedFunc:             groupMarker.Muted,
+		Peer:                       clusterPeer,
+		Timeout:                    opts.HTTPTimeout,
+		Concurrency:                opts.GetConcurrency,
+		ConnectUnaryConcurrency:    opts.ConnectUnaryConcurrency,
+		ConnectStreamConcurrency:   opts.ConnectStreamConcurrency,
+		ConnectUnaryTimeout:        opts.ConnectUnaryTimeout,
+		ConnectStreamIdleTimeout:   opts.ConnectStreamIdleTimeout,
+		ConnectStreamLifetime:      opts.ConnectStreamLifetime,
+		ConnectReadMaxBytes:        opts.ConnectReadMaxBytes,
+		ConnectSendMaxBytes:        opts.ConnectSendMaxBytes,
+		ConnectMaxRequestBodyBytes: opts.ConnectMaxRequestBodyBytes,
+		Logger:                     logger.With("component", "api"),
+		Registry:                   reg,
+		RequestDuration:            m.requestDuration,
+		GroupFunc:                  groupFn,
 	})
 	if err != nil {
 		return fmt.Errorf("failed to create API: %w", err)
@@ -527,10 +523,18 @@ func (a *App) setup() error {
 
 	mux := apih.Register(router, routePrefix)
 
+	protocols := new(http.Protocols)
+	protocols.SetHTTP1(true)
+	protocols.SetHTTP2(true)
+	protocols.SetUnencryptedHTTP2(true)
 	a.server = &http.Server{
 		// Instrument all handlers with tracing.
-		Handler: tracing.Middleware(mux),
+		Handler:           tracing.Middleware(mux),
+		Protocols:         protocols,
+		ReadHeaderTimeout: 10 * time.Second,
+		IdleTimeout:       90 * time.Second,
 	}
+	a.server.RegisterOnShutdown(apih.Shutdown)
 
 	return nil
 }

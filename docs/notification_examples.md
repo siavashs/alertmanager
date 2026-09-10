@@ -102,3 +102,79 @@ templates:
 ```
 
 This example is explained in further detail in this [blogpost](https://prometheus.io/blog/2016/03/03/custom-alertmanager-templates/).
+
+## Defining a reusable HTML email template
+
+The HTML body of an email notification can use a named template from an external file.
+Create `/etc/alertmanager/templates/email.tmpl` with the following content:
+
+```html
+{{ define "email.myorg.html" }}
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>{{ .Status | toUpper }}</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Alert</th>
+          <th>Summary</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range .Alerts }}
+        <tr>
+          <td>{{ index .Labels "alertname" }}</td>
+          <td>{{ index .Annotations "summary" }}</td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </body>
+</html>
+{{ end }}
+```
+
+Load the template file and reference its name from the email receiver's `html` field:
+
+```yaml
+global:
+  smtp_smarthost: 'smtp.example.org:587'
+  smtp_from: 'alertmanager@example.org'
+
+route:
+  receiver: 'email-notifications'
+
+receivers:
+- name: 'email-notifications'
+  email_configs:
+  - to: 'oncall@example.org'
+    html: '{{ template "email.myorg.html" . }}'
+
+templates:
+- '/etc/alertmanager/templates/*.tmpl'
+```
+
+See the [`<email_config>` reference](configuration.md#email_config) for SMTP authentication and TLS options.
+
+## Sending notifications to Gotify with a custom webhook payload
+
+[Gotify](https://gotify.net) doesn't have a dedicated Alertmanager receiver, but its push message API is a simple JSON POST, so it can be driven directly with the generic [`webhook_config`](configuration.md#webhook_config) and its `payload` field.
+
+```yaml
+receivers:
+- name: gotify
+  webhook_configs:
+  - url: 'https://gotify.example.com/message'
+    http_config:
+      authorization:
+        credentials_file: /etc/alertmanager/secrets/gotify-secret/token
+    payload:
+      title: '{{ .Status | toUpper }} {{ .CommonLabels.alertname }}'
+      priority: '{{ if eq .Status "firing" }}5{{ else }}0{{ end }}'
+      message: |
+        {{ range .Alerts }}{{ .Annotations.summary }}
+        {{ end }}
+```
+
+A more complete version of this example, with Markdown formatting and separate sections for firing and resolved alerts, is available in [`examples/webhook/gotify.yml`](https://github.com/prometheus/alertmanager/blob/main/examples/webhook/gotify.yml).

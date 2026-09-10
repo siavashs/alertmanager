@@ -27,7 +27,6 @@ import (
 
 	"github.com/prometheus/alertmanager/alert"
 	"github.com/prometheus/alertmanager/eventrecorder"
-	"github.com/prometheus/alertmanager/eventrecorder/eventrecorderpb"
 )
 
 // RetryStage notifies via passed integration with exponential backoff until it
@@ -76,8 +75,7 @@ func (r RetryStage) Exec(ctx context.Context, l *slog.Logger, alerts ...*alert.A
 		span.SetStatus(codes.Error, err.Error())
 		span.RecordError(err)
 
-		var e *ErrorWithReason
-		if errors.As(err, &e) {
+		if e, ok := errors.AsType[*ErrorWithReason](err); ok {
 			failureReason = e.Reason.String()
 		}
 		r.metrics.numTotalFailedNotifications.WithLabelValues(append(r.labelValues, failureReason)...).Inc()
@@ -180,7 +178,7 @@ func (r RetryStage) exec(ctx context.Context, l *slog.Logger, alerts ...*alert.A
 					l.Info("Notify success")
 				}
 
-				r.recorder.RecordEvent(ctx, func() *eventrecorderpb.EventData {
+				r.recorder.RecordEvent(ctx, func() eventrecorder.EventData {
 					return NewNotificationEvent(ctx, sent, r.integration)
 				})
 				return ctx, alerts, nil
