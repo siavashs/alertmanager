@@ -1,0 +1,38 @@
+docs/configuration.md
+  s_2c724b63170add::t_3e1bdc22e30217 34-35
+store/store.go
+  s_2c724b63170add::t_3904bff18606e0 179
+  s_2c724b63170add::t_365aacbc41f97f 31-34,38
+  s_2c724b63170add::t_ec023b33e4cec7 189
+  s_2c724b63170add::t_bf9c0ac74b8365 35-37
+store/store_test.go
+  s_2c724b63170add::t_2500b3d59be446 157-161,163-164,166
+  s_2c724b63170add::t_6176d086897d3e 187
+  s_2c724b63170add::t_6a7c5a06afa85b 175
+  s_2c724b63170add::t_af73d7df20d7ef 162,165
+  s_2c724b63170add::t_a791a27fc8c648 197
+provider/mem/mem.go
+  s_2c724b63170add::t_2163a5e256e5a6 346,348
+  s_2c724b63170add::t_b5fce6fae2b048 344-345,347
+provider/mem/mem_test.go
+  s_2c724b63170add::t_0ab583fe627a1a 28,212-237
+  s_2c724b63170add::t_69391dd2565f85 238-239
+docs/alertmanager.md
+  s_2c724b63170add::t_f1563bb481cfde 95-99
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "d1d7f39319bc2f8c0e53e4dd76734c49e935bbcb",
+  "prompts": {},
+  "sessions": {
+    "s_2c724b63170add": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "chambray-clownfish",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
