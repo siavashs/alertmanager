@@ -1,0 +1,45 @@
+test/e2e/routing_test.go
+  s_409b2e306026d4::t_161615bae7ad65 25-26,32-39
+api/connect/status_test.go
+  s_409b2e306026d4::t_bc021ab5e8de82 764-792,795,798-809
+  s_409b2e306026d4::t_ff066452a95ed4 126-131
+  s_409b2e306026d4::t_90d7a25f59f16f 106-112
+  s_409b2e306026d4::t_69ea5c0ebe2d49 793-794,796-797
+docs/https.md
+  s_409b2e306026d4::t_3f90d65c640ee0 83-84
+test/e2e/harness_test.go
+  s_409b2e306026d4::t_563bc5be9e0e75 18-20,52-53,58,60-63,82-97,122-140,144,147-148
+api/connect/connect.go
+  s_409b2e306026d4::t_3e0e088a48e257 532
+  s_409b2e306026d4::t_a68cc9f81945f9 307
+  s_409b2e306026d4::t_4514204875999c 314-318,337-339,349
+app/app.go
+  s_409b2e306026d4::t_1bc77c97f92007 110,527-544,546
+app/lifecycle.go
+  s_409b2e306026d4::t_f9179707a1ed0b 74,76-79
+  s_409b2e306026d4::t_eaf8948ecb3ddd 20,65,67-73,75,80,221-230,232-238
+app/listen.go
+  s_409b2e306026d4::t_58c09b48a77d3f 20,22,25,30,101-141
+test/e2e/status_test.go
+  s_409b2e306026d4::t_c5525d6272e480 18,26,29,38-39,43,59-74,79,85,103-104,108-112,116-127,144-147,150-159,161
+README.md
+  s_409b2e306026d4::t_d56faebb49cf9e 194-199
+app/lifecycle_test.go
+  s_409b2e306026d4::t_e6d2ba9d00b50c 120-140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "a44de43e31e97251613e5f6633dad61906ec3026",
+  "prompts": {},
+  "sessions": {
+    "s_409b2e306026d4": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "nonstop-wallflower",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
