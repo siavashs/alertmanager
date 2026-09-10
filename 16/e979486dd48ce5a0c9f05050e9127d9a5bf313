@@ -1,0 +1,19 @@
+notify/notify_test.go
+  s_a7f5e6359483df::t_f757d3e4a94b1d 602
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "16e979486dd48ce5a0c9f05050e9127d9a5bf313",
+  "prompts": {},
+  "sessions": {
+    "s_a7f5e6359483df": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "chain-limpet",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
