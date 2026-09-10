@@ -1,0 +1,19 @@
+catalog-info.yaml
+  s_0df80c5fb7d48e::t_a744aed458e67d 77-113
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "8af5f1c0b4957d9315f72ee52c4a3f90b4ea7d99",
+  "prompts": {},
+  "sessions": {
+    "s_0df80c5fb7d48e": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f83aaa85effeIZMUv4YUDZgRyW",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Andy Grunwald <agrunwald@cloudflare.com>"
+    }
+  }
+}
