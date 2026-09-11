@@ -1,0 +1,59 @@
+eventrecorder/events_test.go
+  s_2a7df3966f691d::t_ae44cd765e50d8 134
+  s_2a7df3966f691d::t_4c8fad5a54c9a1 151-152
+  s_2a7df3966f691d::t_192ab5d69d5d79 42
+  s_2a7df3966f691d::t_c89e9da7f5f2d4 35
+notify/context.go
+  s_2a7df3966f691d::t_01216a25d677aa 207-209
+  s_2a7df3966f691d::t_d591327cfc4a2d 21
+notify/notify_test.go
+  s_2a7df3966f691d::t_942e4a1e4cfce3 709
+  s_2a7df3966f691d::t_1b04c97aa76672 687-688
+  s_2a7df3966f691d::t_c7e4b91ff78bab 693-700,702-706,713
+  s_2a7df3966f691d::t_9cde1f78a17caa 675
+  s_2a7df3966f691d::t_df2a0bb0bb0097 684-685
+  s_2a7df3966f691d::t_51084aa1e9c37c 22-23,25,34,37,39,57,59,65,230,249,260,283,352-354,358,366,473-474,478,501,503,515,558,568,595,603,625,627,635,660,671,676-679,729,731,780
+  s_2a7df3966f691d::t_e94e80a234624b 690-692
+  s_2a7df3966f691d::t_aeb7b05bd78096 680
+  s_2a7df3966f691d::t_8dbe0bdc9352f0 681-683,686,689,739,1007,1099,1141,1168,1218
+  s_2a7df3966f691d::t_69965977306fd9 707-708
+  s_2a7df3966f691d::t_a2555f4bc407e5 710-712
+  s_2a7df3966f691d::t_17cf365e21d786 714-716
+proto/eventrecorder/events/v2/events.proto
+  s_2a7df3966f691d::t_07d5a3114c750f 99-102
+  s_2a7df3966f691d::t_ab25118039a538 71,77
+notify/mute_test.go
+  s_2a7df3966f691d::t_99365bbe8a9a2b 94-111,113-116
+notify/retry_stage.go
+  s_2a7df3966f691d::t_02d1f06b474a56 188
+notify/event.go
+  s_2a7df3966f691d::t_f2c2eb2982a874 102
+  s_2a7df3966f691d::t_26ee69ac3a5fca 98
+  s_2a7df3966f691d::t_88c5a122e9ef25 17
+  s_2a7df3966f691d::t_906d78a3577b60 38-41,46-50
+  s_2a7df3966f691d::t_3ab5caa2943a40 73,77-79,84-85
+  s_2a7df3966f691d::t_272f6025a48d01 97
+  s_2a7df3966f691d::t_583f4405390f07 83,86
+  s_2a7df3966f691d::t_0da00a4c3f73c2 103
+eventrecorder/events.go
+  s_2a7df3966f691d::t_a9550e96d34061 374-377
+  s_2a7df3966f691d::t_877e69e87b807c 111-114
+  s_2a7df3966f691d::t_0aeb777b2f02c0 153,155,160,162
+  s_2a7df3966f691d::t_d917d8aecccdf8 170-171
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "52d553d977c6ba5236660fadceace1bd339e3641",
+  "prompts": {},
+  "sessions": {
+    "s_2a7df3966f691d": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "material-otter",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
