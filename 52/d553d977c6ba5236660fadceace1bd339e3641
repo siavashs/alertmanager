@@ -6,6 +6,8 @@ eventrecorder/events_test.go
 notify/context.go
   s_2a7df3966f691d::t_01216a25d677aa 207-209
   s_2a7df3966f691d::t_d591327cfc4a2d 21
+  s_392bca83b68347::t_6cfcd57c67576b 48
+  s_392bca83b68347::t_d194d5e37cb1a4 205-206,210-214
 notify/notify_test.go
   s_2a7df3966f691d::t_942e4a1e4cfce3 709
   s_2a7df3966f691d::t_1b04c97aa76672 687-688
@@ -19,11 +21,14 @@ notify/notify_test.go
   s_2a7df3966f691d::t_69965977306fd9 707-708
   s_2a7df3966f691d::t_a2555f4bc407e5 710-712
   s_2a7df3966f691d::t_17cf365e21d786 714-716
+  s_392bca83b68347::t_d2996712e898b7 717-727,984,1199,1292
+  s_392bca83b68347::t_a66d921eb3f1f2 701
 proto/eventrecorder/events/v2/events.proto
   s_2a7df3966f691d::t_07d5a3114c750f 99-102
   s_2a7df3966f691d::t_ab25118039a538 71,77
 notify/mute_test.go
   s_2a7df3966f691d::t_99365bbe8a9a2b 94-111,113-116
+  s_392bca83b68347::t_ae68a829db391f 112
 notify/retry_stage.go
   s_2a7df3966f691d::t_02d1f06b474a56 188
 notify/event.go
@@ -35,11 +40,15 @@ notify/event.go
   s_2a7df3966f691d::t_272f6025a48d01 97
   s_2a7df3966f691d::t_583f4405390f07 83,86
   s_2a7df3966f691d::t_0da00a4c3f73c2 103
+  s_392bca83b68347::t_d2996712e898b7 22
+  s_392bca83b68347::t_954ee7b48b0dd8 80
 eventrecorder/events.go
   s_2a7df3966f691d::t_a9550e96d34061 374-377
   s_2a7df3966f691d::t_877e69e87b807c 111-114
   s_2a7df3966f691d::t_0aeb777b2f02c0 153,155,160,162
   s_2a7df3966f691d::t_d917d8aecccdf8 170-171
+notify/mute.go
+  s_392bca83b68347::t_f8ed88c30b44ad 64-65
 ---
 {
   "schema_version": "authorship/3.0.0",
@@ -54,6 +63,14 @@ eventrecorder/events.go
         "model": "unknown"
       },
       "human_author": null
+    },
+    "s_392bca83b68347": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "north-shampoo",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
     }
   }
 }
