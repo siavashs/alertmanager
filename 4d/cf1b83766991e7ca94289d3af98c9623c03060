@@ -1,0 +1,35 @@
+ui/mantine-ui/package.json
+  s_d2299ab0b0cd74::t_0c66276111e52a 9
+ui/mantine-ui/Makefile
+  s_d2299ab0b0cd74::t_8ec5c970774e99 15-21
+  s_d2299ab0b0cd74::t_b8b6c6aadfee56 28
+  s_e6628b82f91b56::t_68067849d17d07 22
+Makefile
+  s_d2299ab0b0cd74::t_1cd2ede17abfde 41
+  s_d2299ab0b0cd74::t_21e98cd265c66e 28-29
+  s_d2299ab0b0cd74::t_206f1b381b2d23 52-55
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "4dcf1b83766991e7ca94289d3af98c9623c03060",
+  "prompts": {},
+  "sessions": {
+    "s_d2299ab0b0cd74": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "blush-wool",
+        "model": "unknown"
+      },
+      "human_author": null
+    },
+    "s_e6628b82f91b56": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "melodic-leader",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
