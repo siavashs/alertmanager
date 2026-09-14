@@ -1,0 +1,78 @@
+proto/eventrecorder/events/v2/events.proto
+  s_392bca83b68347::t_78634d89ee290a 54,56
+eventrecorder/events_test.go
+  s_2a7df3966f691d::t_192ab5d69d5d79 42
+  s_392bca83b68347::t_bf25ef5dab6d7b 47-59
+  s_2a7df3966f691d::t_c89e9da7f5f2d4 35
+notify/event.go
+  s_2a7df3966f691d::t_f2c2eb2982a874 121
+  s_2a7df3966f691d::t_3ab5caa2943a40 93-95
+  s_392bca83b68347::t_d2996712e898b7 22
+  s_392bca83b68347::t_4ba27d40bc64d5 89,97-99,102-105
+  s_392bca83b68347::t_654ac983416ce8 56-71
+  s_2a7df3966f691d::t_88c5a122e9ef25 17
+  s_2a7df3966f691d::t_906d78a3577b60 38-41,46-50
+  s_392bca83b68347::t_a0fc5b3cf78c03 117,122
+  s_392bca83b68347::t_954ee7b48b0dd8 96
+  s_2a7df3966f691d::t_272f6025a48d01 116
+notify/mute.go
+  s_392bca83b68347::t_f8ed88c30b44ad 64-65
+eventrecorder/events/v2/events.pb.go
+  s_392bca83b68347::t_95b5b7eca98e0e 3
+notify/notify_test.go
+  s_392bca83b68347::t_a66d921eb3f1f2 701
+  s_2a7df3966f691d::t_c7e4b91ff78bab 693-700,702-706,713
+  s_2a7df3966f691d::t_942e4a1e4cfce3 709
+  s_2a7df3966f691d::t_9cde1f78a17caa 675
+  s_2a7df3966f691d::t_69965977306fd9 707-708
+  s_2a7df3966f691d::t_a2555f4bc407e5 710-712
+  s_2a7df3966f691d::t_51084aa1e9c37c 22-23,25,34,37,39,57,59,65,230,249,260,283,352-354,358,366,473-474,478,501,503,515,558,568,595,603,625,627,635,660,671,676-677,679,737,739,788
+  s_392bca83b68347::t_9a000c608f4ad1 717,722-723,727,731-733
+  s_2a7df3966f691d::t_1b04c97aa76672 687-688
+  s_392bca83b68347::t_d2996712e898b7 718-721,728-730,734-735,992,1207,1300
+  s_2a7df3966f691d::t_8dbe0bdc9352f0 681-683,686,689,747,1015,1107,1149,1176,1226
+  s_392bca83b68347::t_4a170bafb292c4 724-726
+  s_2a7df3966f691d::t_aeb7b05bd78096 680
+  s_392bca83b68347::t_4200c95c1acc23 678
+  s_2a7df3966f691d::t_df2a0bb0bb0097 684-685
+  s_2a7df3966f691d::t_e94e80a234624b 690-692
+  s_2a7df3966f691d::t_17cf365e21d786 714-716
+notify/context.go
+  s_392bca83b68347::t_354ec8ae895404 215
+  s_392bca83b68347::t_d194d5e37cb1a4 205-206,210-214,216
+  s_2a7df3966f691d::t_d591327cfc4a2d 21
+  s_392bca83b68347::t_6cfcd57c67576b 48
+  s_2a7df3966f691d::t_01216a25d677aa 207-209
+  s_392bca83b68347::t_18dcc076bb29f0 217
+eventrecorder/events.go
+  s_392bca83b68347::t_2e4d592ea04eff 136-142,145-147
+notify/mute_test.go
+  s_2a7df3966f691d::t_99365bbe8a9a2b 94-111,113-116
+  s_392bca83b68347::t_ae68a829db391f 112
+notify/retry_stage.go
+  s_392bca83b68347::t_abf6a8927e275d 188
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "b7eb4e7685b487c2ca43e4a24a331e929bf38dec",
+  "prompts": {},
+  "sessions": {
+    "s_2a7df3966f691d": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "material-otter",
+        "model": "unknown"
+      },
+      "human_author": null
+    },
+    "s_392bca83b68347": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "north-shampoo",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
