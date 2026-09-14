@@ -1,0 +1,35 @@
+notify/context.go
+  s_a7f5e6359483df::t_2b97ee714eb04f 192-194,197-199
+eventrecorder/events_test.go
+  s_a7f5e6359483df::t_2b97ee714eb04f 132,144,150-151
+notify/retry_stage.go
+  s_a7f5e6359483df::t_2b97ee714eb04f 183
+notify/mute.go
+  s_a7f5e6359483df::t_2b97ee714eb04f 105-114
+notify/notify_test.go
+  s_a7f5e6359483df::t_2b97ee714eb04f 37,46,48,54,219,238,249,272,341-343,347,355,392-393,397,420,422,434,477,487,514,522,544,546,554,579,590,595,597,605,645,716,739,831,873,900,931,950,1024
+eventrecorder/events.go
+  s_a7f5e6359483df::t_2b97ee714eb04f 92-96,116-119,136-145,168,170,175,177,185-186,389-392
+proto/eventrecorder/events/v2/events.proto
+  s_a7f5e6359483df::t_2b97ee714eb04f 54-59,77,83,105-108
+notify/event.go
+  s_a7f5e6359483df::t_2b97ee714eb04f 17-18,24,27-30,43-48,53-57,80-87,93-96,107-108,112-113
+eventrecorder/events/v2/events.pb.go
+  s_a7f5e6359483df::t_4f26d6a15ac8a2 3,137,603-655,671,683,696,751,763,776,789,797,809,822,825,842,850,862,875,878,903,915,928,948-951,963,975,988,991,998,1005,1012,1073,1085,1098,1184,1196,1209,1250,1262,1275,1295,1307,1320,1340,1352,1365,1386,1398,1411,1439,1451,1464,1494,1506,1519,1562,1574,1587,1653-1658,1671-1673,1675-1677,1682-1687,1772,1781-1803,1806,1810-1860,1880,1887
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "4cc51db064b0e9b6dc0b126841dfedfe57a1a75b",
+  "prompts": {},
+  "sessions": {
+    "s_a7f5e6359483df": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "chain-limpet",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
