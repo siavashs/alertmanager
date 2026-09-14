@@ -1,0 +1,20 @@
+ui/mantine-ui/Makefile
+  s_d2299ab0b0cd74::t_5f0c182253a3bc 1-3
+  s_d2299ab0b0cd74::t_732f40cbb7b8a8 31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "138b8237f3c14591cf8c6d3f337af34231aa7179",
+  "prompts": {},
+  "sessions": {
+    "s_d2299ab0b0cd74": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "blush-wool",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
