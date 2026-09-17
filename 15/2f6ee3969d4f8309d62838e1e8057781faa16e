@@ -1,0 +1,24 @@
+api/connect/connect.go
+  s_e56c8761611694::t_40b22e8d0d4ba1 478
+  s_e56c8761611694::t_89407a4bb4047e 728-729
+  s_e56c8761611694::t_38e667be441792 334-342
+  s_e56c8761611694::t_da228b31c78524 532
+api/connect/status_test.go
+  s_e56c8761611694::t_9158a90b4d9a6a 801-828
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "152f6ee3969d4f8309d62838e1e8057781faa16e",
+  "prompts": {},
+  "sessions": {
+    "s_e56c8761611694": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "obtainable-breadfruit",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
