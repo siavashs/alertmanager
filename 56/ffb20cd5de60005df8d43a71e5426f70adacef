@@ -1,0 +1,88 @@
+api/connect/connect.go
+  s_43b4f71a0cabe5::t_614f81d20d2144 113-116
+  s_43b4f71a0cabe5::t_95eb44d3ce8c13 220-225
+  s_43b4f71a0cabe5::t_c2c8e1ef4d7065 248-253
+  s_43b4f71a0cabe5::t_6c061a27dc189a 620
+  s_43b4f71a0cabe5::t_ce474fbf9768bb 512
+  s_43b4f71a0cabe5::t_68861c3540a7d3 238-239
+  s_43b4f71a0cabe5::t_9339dc827c8a9a 127-132
+  s_43b4f71a0cabe5::t_0cb59fe8d5dccd 23,262
+  s_43b4f71a0cabe5::t_bef1cc4d55a25b 35,37,40-44,49-61
+  s_43b4f71a0cabe5::t_0ff0dcda80a462 94-99
+api/connect/capability.go
+  s_43b4f71a0cabe5::t_37676041453bb5 1-23
+api/connect/pagination.go
+  s_43b4f71a0cabe5::t_6cea54a356a6aa 1-50,54-199
+  s_43b4f71a0cabe5::t_96498ed03c4d42 51-53
+api/api.go
+  s_43b4f71a0cabe5::t_adece166ba1946 340
+  s_43b4f71a0cabe5::t_809c4135ccdea6 160-165
+  s_43b4f71a0cabe5::t_783dffc11d9557 39-40,72-76
+api/connect/errors.go
+  s_43b4f71a0cabe5::t_7eeac7670e6272 1-91
+app/app.go
+  s_43b4f71a0cabe5::t_2daa383b164a08 390-391
+api/connect/matcher.go
+  s_43b4f71a0cabe5::t_c4a31e744fa48b 1-134
+api/connect/health_test.go
+  s_43b4f71a0cabe5::t_4b7803794208f2 37
+scripts/genproto.sh
+  s_43b4f71a0cabe5::t_d78e9da262c69c 6-7
+api/connect/status.go
+  s_43b4f71a0cabe5::t_d996fd8cd6d788 34-35
+ui/mantine-ui/src/gen/common/v3alpha/common_pb.ts
+  s_43b4f71a0cabe5::t_e8372f4e70f550 1-385
+featurecontrol/featurecontrol.go
+  s_43b4f71a0cabe5::t_aea4e5e272ccfd 126
+  s_43b4f71a0cabe5::t_5c4f50a6210a93 58,62,66,70,74,78,82,86,99,129
+  s_43b4f71a0cabe5::t_bf9fd3656f5cd6 136,138
+  s_43b4f71a0cabe5::t_1e30a2b4cf3aa7 137,139-140
+  s_43b4f71a0cabe5::t_6e00e766d0de79 54
+  s_43b4f71a0cabe5::t_94abc19ca10e8c 159
+  s_43b4f71a0cabe5::t_bdba0d3e292a82 93-95
+  s_43b4f71a0cabe5::t_93ae106ef85367 90,158
+api/connect/reload.go
+  s_43b4f71a0cabe5::t_a7fbeadb03778d 1-116
+app/reloader.go
+  s_43b4f71a0cabe5::t_074a41d4ae7147 245-249
+api/connect/common_test.go
+  s_43b4f71a0cabe5::t_380583daf5a7df 1-236,238-256,258-263
+  s_43b4f71a0cabe5::t_f2c51cafd0aea3 237
+  s_43b4f71a0cabe5::t_1b32374aa353c5 257
+featurecontrol/featurecontrol_test.go
+  s_43b4f71a0cabe5::t_6042f73034f61c 88
+  s_43b4f71a0cabe5::t_b52e1f6be5f673 65-76,78,80-87,89-90,92
+  s_43b4f71a0cabe5::t_0383aad7d8286a 77
+  s_43b4f71a0cabe5::t_8c168b7290f6af 45-49
+api/connect/status_test.go
+  s_43b4f71a0cabe5::t_2a76190a9776d5 122,152,176,187,201,226,262,305,320,333,346,358,394,547,577,660
+api/connect/reload_test.go
+  s_43b4f71a0cabe5::t_7aab37785a47c6 1-125
+api/connect/filter.go
+  s_43b4f71a0cabe5::t_39a22d0e3882d0 1-37
+proto/api/common/v3alpha/common.proto
+  s_43b4f71a0cabe5::t_e1535f23bb4874 52
+  s_43b4f71a0cabe5::t_03c597939307ae 16-18
+  s_43b4f71a0cabe5::t_ed7a7d06f94c9f 1-15,19-51,53-115
+api/api_test.go
+  s_43b4f71a0cabe5::t_2a5a3d09e77fb0 101
+  s_43b4f71a0cabe5::t_bd061181d3c5a8 32,88,90
+api/common/v3alpha/common.pb.go
+  s_43b4f71a0cabe5::t_cda74e7ea182ba 1-875
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "56ffb20cd5de60005df8d43a71e5426f70adacef",
+  "prompts": {},
+  "sessions": {
+    "s_43b4f71a0cabe5": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "scented-carp",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
