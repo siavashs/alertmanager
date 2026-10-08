@@ -41,8 +41,10 @@ featurecontrol/featurecontrol.go
   s_43b4f71a0cabe5::t_93ae106ef85367 90,158
 api/connect/reload.go
   s_43b4f71a0cabe5::t_a7fbeadb03778d 1-21,22-25,27-37,39-40,42-101,103-116
+  s_43b4f71a0cabe5::t_262847a608f53b 26,38,41,102
 app/reloader.go
   s_43b4f71a0cabe5::t_074a41d4ae7147 247-250
+  s_43b4f71a0cabe5::t_ddc288cf58b580 246
 api/connect/common_test.go
   s_43b4f71a0cabe5::t_380583daf5a7df 1-236,238-256,258-263
   s_43b4f71a0cabe5::t_f2c51cafd0aea3 237
@@ -54,6 +56,7 @@ featurecontrol/featurecontrol_test.go
   s_43b4f71a0cabe5::t_8c168b7290f6af 45-49
 api/connect/status_test.go
   s_43b4f71a0cabe5::t_2a76190a9776d5 42,74,95,106,120,142,233,248,262,276,289,324
+  s_43b4f71a0cabe5::t_75df9c8ae2999b 202
 api/connect/reload_test.go
   s_43b4f71a0cabe5::t_7aab37785a47c6 1-125
 api/connect/filter.go
@@ -67,6 +70,10 @@ api/api_test.go
   s_43b4f71a0cabe5::t_bd061181d3c5a8 32,88,90
 api/common/v3alpha/common.pb.go
   s_43b4f71a0cabe5::t_cda74e7ea182ba 1-875
+api/connect/connect_test.go
+  s_43b4f71a0cabe5::t_6494f4d644738e 155,186,282
+api/connect/health_test.go
+  s_43b4f71a0cabe5::t_e98a2c016f9e4e 37
 ---
 {
   "schema_version": "authorship/3.0.0",
