@@ -1,0 +1,81 @@
+api/connect/matcher.go
+  s_43b4f71a0cabe5::t_3e883f8aa9d19e 1-74
+silence/silence.go
+  s_43b4f71a0cabe5::t_94c4456bef4e48 1062
+api/connect/connect_test.go
+  s_43b4f71a0cabe5::t_e3228e2b3667cd 130
+  s_43b4f71a0cabe5::t_2d8f409978db26 129
+  s_43b4f71a0cabe5::t_864ec3e39c9d92 46
+  s_43b4f71a0cabe5::t_b893d8344f2ac8 128
+api/connect/silence.go
+  s_43b4f71a0cabe5::t_5bc6aa4655009a 1-42,44-56,60,62-78,81-86,89-194,197-198,205-209,211
+  s_43b4f71a0cabe5::t_c9230c172f98c2 57-59,61
+  s_43b4f71a0cabe5::t_6d4e89e45c70e0 79-80
+  s_43b4f71a0cabe5::t_1762a9ea29f31e 195-196,199-204,210
+  s_43b4f71a0cabe5::t_96d3fc2f01fd2c 43
+  s_43b4f71a0cabe5::t_f0bea8314fd45f 87-88
+scripts/genproto.sh
+  s_43b4f71a0cabe5::t_bc2da8c1126471 6-7
+silence/state_test.go
+  s_43b4f71a0cabe5::t_95c62f6495ebad 51-72,74-82
+  s_43b4f71a0cabe5::t_341389ce854f9c 19,86-87,89-106
+  s_43b4f71a0cabe5::t_cd06b589bd895e 27,88
+  s_43b4f71a0cabe5::t_73a6efd4ca122d 28
+  s_43b4f71a0cabe5::t_f8e568740d6860 73
+  s_43b4f71a0cabe5::t_7bce72371b18a1 83-85,107-108
+proto/api/silence/v3alpha/silence.proto
+  s_43b4f71a0cabe5::t_ebf8f721ff32d1 28-29
+  s_43b4f71a0cabe5::t_6a5b3207cbb97b 1-27,30-76
+api/api_test.go
+  s_43b4f71a0cabe5::t_2cc62cdabe5ebb 101
+  s_43b4f71a0cabe5::t_6b9163a4c245b2 32,88,90
+api/connect/silence_test.go
+  s_43b4f71a0cabe5::t_56e6b16137e6a1 274
+  s_43b4f71a0cabe5::t_a9e03beeefb806 224
+  s_43b4f71a0cabe5::t_776a7dfce3b971 1-83,85-167,169-215,217-222,228-273,275-282,372
+  s_43b4f71a0cabe5::t_74f6793ce7adbb 283-369
+  s_43b4f71a0cabe5::t_d988cdb9b00c88 84
+  s_43b4f71a0cabe5::t_b8b9450445789d 370-371
+  s_43b4f71a0cabe5::t_ddb70c6e99228e 168
+  s_43b4f71a0cabe5::t_dd184b216a9000 216,223,225-227
+api/connect/connect.go
+  s_43b4f71a0cabe5::t_2821856444fca3 39,44-45
+  s_43b4f71a0cabe5::t_7d57ebeb0ef587 78
+  s_43b4f71a0cabe5::t_035267df44e180 35,271-280
+  s_43b4f71a0cabe5::t_eb1e0e5dc0727c 285
+  s_43b4f71a0cabe5::t_f7070fc2891d4c 102
+  s_43b4f71a0cabe5::t_ac54e523fa0314 190-191
+  s_43b4f71a0cabe5::t_46de1c4ea1ddec 214-215
+silence/silence_test.go
+  s_43b4f71a0cabe5::t_a59f380da59cf7 759
+test/e2e/silence_test.go
+  s_43b4f71a0cabe5::t_ffb2090be7656f 1-81,83,90,92,96-102,104-141
+  s_43b4f71a0cabe5::t_0cec7c0a9f4226 82,84-89,91,93-95
+  s_43b4f71a0cabe5::t_f1c64e6cec5ada 103
+proto/api/common/v3alpha/common.proto
+  s_43b4f71a0cabe5::t_197c3a3d3ed6a7 1-49
+test/e2e/status_test.go
+  s_43b4f71a0cabe5::t_548b367897c781 30,147
+api/api.go
+  s_43b4f71a0cabe5::t_db24055bcef2d5 154
+silence/state.go
+  s_43b4f71a0cabe5::t_57b19bb28c52cc 28-32
+api/connect/health_test.go
+  s_43b4f71a0cabe5::t_18a14614cdf2ac 25,44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "c4216523cfdf3c06c226f9e611fdffa6761f77f2",
+  "prompts": {},
+  "sessions": {
+    "s_43b4f71a0cabe5": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "scented-carp",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
