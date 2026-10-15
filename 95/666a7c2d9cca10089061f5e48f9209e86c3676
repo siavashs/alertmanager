@@ -1,0 +1,31 @@
+app/app.go
+  s_d94142554e3a1f::t_fcff8d85051a09 109,526-545
+app/lifecycle.go
+  s_d94142554e3a1f::t_fcff8d85051a09 65-68,70-80,221-226,228-234
+  s_d94142554e3a1f::t_fb9aea49e9d186 69
+app/lifecycle_test.go
+  s_d94142554e3a1f::t_fcff8d85051a09 122-158
+docs/https.md
+  s_d94142554e3a1f::t_fcff8d85051a09 83-84
+api/connect/connect.go
+  s_d94142554e3a1f::t_208c4576ba00b7 728-729
+  s_d94142554e3a1f::t_fcff8d85051a09 307,314-318,334-342,346-348,358,478,532,539
+README.md
+  s_d94142554e3a1f::t_fcff8d85051a09 194-199
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "95666a7c2d9cca10089061f5e48f9209e86c3676",
+  "prompts": {},
+  "sessions": {
+    "s_d94142554e3a1f": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "aloud-class",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
