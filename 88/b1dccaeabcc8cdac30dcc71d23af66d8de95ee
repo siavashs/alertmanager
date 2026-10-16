@@ -1,0 +1,27 @@
+api/v2/api_test.go
+  s_43b4f71a0cabe5::t_dda8b86959d4ff 287-306
+api/v2/compat.go
+  s_43b4f71a0cabe5::t_dda8b86959d4ff 33-36,40
+silence/silence.go
+  s_43b4f71a0cabe5::t_dda8b86959d4ff 209,214-215,235-236,911,914,973,979,1094-1099,1114
+silence/silence_test.go
+  s_43b4f71a0cabe5::t_dda8b86959d4ff 694-756
+api/v2/api.go
+  s_43b4f71a0cabe5::t_dda8b86959d4ff 700-701,712
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "88b1dccaeabcc8cdac30dcc71d23af66d8de95ee",
+  "prompts": {},
+  "sessions": {
+    "s_43b4f71a0cabe5": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "scented-carp",
+        "model": "unknown"
+      },
+      "human_author": "Siavash Safi <siavash@cloudflare.com>"
+    }
+  }
+}
