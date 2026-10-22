@@ -1,0 +1,65 @@
+test/e2e/status_test.go
+  s_43b4f71a0cabe5::t_548b367897c781 32,177
+api/connect/silence.go
+  s_43b4f71a0cabe5::t_6529ac20b01040 38-41,63-68,80
+  s_43b4f71a0cabe5::t_5bc6aa4655009a 1-37,42-62,69-79,81-83
+api/connect/connect.go
+  s_43b4f71a0cabe5::t_f7070fc2891d4c 114
+  s_43b4f71a0cabe5::t_035267df44e180 39,103,294-309
+  s_43b4f71a0cabe5::t_46de1c4ea1ddec 230-232
+  s_43b4f71a0cabe5::t_7d57ebeb0ef587 85
+  s_43b4f71a0cabe5::t_ac54e523fa0314 204-206
+  s_43b4f71a0cabe5::t_2821856444fca3 44,49-50
+  s_43b4f71a0cabe5::t_447a2c70375bbd 38
+  s_43b4f71a0cabe5::t_429d94745e7dd1 40
+  s_43b4f71a0cabe5::t_43cc9848d56583 51-52
+  s_43b4f71a0cabe5::t_3397c2a55ed619 86
+  s_43b4f71a0cabe5::t_3e45c07f11aa98 100-102
+  s_43b4f71a0cabe5::t_816a5c74d4ff28 115
+test/e2e/silence_test.go
+  s_43b4f71a0cabe5::t_ffb2090be7656f 1-81,83,90,92,96-102,104-141
+  s_43b4f71a0cabe5::t_f1c64e6cec5ada 103
+  s_43b4f71a0cabe5::t_0cec7c0a9f4226 82,84-89,91,93-95
+api/connect/silence_list_test.go
+  s_43b4f71a0cabe5::t_15065c42bec62b 1-302
+proto/api/silence/v3alpha/silence.proto
+  s_43b4f71a0cabe5::t_ebf8f721ff32d1 28-29
+  s_43b4f71a0cabe5::t_6a5b3207cbb97b 1-27,30-96
+api/connect/health_test.go
+  s_43b4f71a0cabe5::t_18a14614cdf2ac 25,37,44
+api/api_test.go
+  s_43b4f71a0cabe5::t_6b9163a4c245b2 32,88,90
+  s_43b4f71a0cabe5::t_2cc62cdabe5ebb 101
+api/api.go
+  s_43b4f71a0cabe5::t_db24055bcef2d5 160
+  s_43b4f71a0cabe5::t_04f072876db876 161
+api/connect/matcher.go
+  s_43b4f71a0cabe5::t_3e883f8aa9d19e 1-49
+api/connect/silence_test.go
+  s_43b4f71a0cabe5::t_74f6793ce7adbb 38-86
+  s_43b4f71a0cabe5::t_776a7dfce3b971 1-37
+proto/api/common/v3alpha/common.proto
+  s_43b4f71a0cabe5::t_197c3a3d3ed6a7 1-44
+api/connect/connect_test.go
+  s_43b4f71a0cabe5::t_864ec3e39c9d92 128
+api/connect/silence_list.go
+  s_43b4f71a0cabe5::t_edc3ff539d225e 1-109
+scripts/genproto.sh
+  s_43b4f71a0cabe5::t_bc2da8c1126471 6-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "4576dbb103d8fd79b5afc4d9c0390a806710512c",
+  "prompts": {},
+  "sessions": {
+    "s_43b4f71a0cabe5": {
+      "agent_id": {
+        "tool": "windsurf",
+        "id": "scented-carp",
+        "model": "unknown"
+      },
+      "human_author": null
+    }
+  }
+}
